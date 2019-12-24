@@ -1,0 +1,178 @@
+<!DOCTYPE html><html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="keywords" content="hexo,图片">
+	
+	
+	<meta name="description" content="hexo添加本地图片">
+	
+
+	<title> hexo添加本地图片 - CQH.CH</title>
+
+	<link rel="stylesheet" href="/css/aircloud.css">
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+</div>
+
+<div class="index-about">
+    <i> Capital of Quant and Hedge </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="/" />
+        </div>
+        <div class="name">
+            <i>Ande.Studio</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> Capital of Quant and Hedge </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        hexo添加本地图片
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2019-12-23 19:56:18</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#hexo" title="hexo">hexo</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#图片" title="图片">图片</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <p> Hexo中添加本地图片<br>First</p>
+<p>1 把主页配置文件_config.yml 里的post_asset_folder:这个选项设置为true</p>
+<p>2 在你的hexo目录下执行这样一句话npm install hexo-asset-image –save，这是下载安装一个可以上传本地图片的插件，来自dalao：dalao的git</p>
+<p>3 等待一小段时间后，再运行hexo n “xxxx”来生成md博文时，/source/_posts文件夹内除了xxxx.md文件还有一个同名的文件夹</p>
+<p>4 最后在xxxx.md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后只需要在xxxx.md中按照markdown的格式引入图片：</p>
+<p><img src="xxxx/%E5%9B%BE%E7%89%87%E5%90%8D.jpg" alt="你想输入的替代文字"></p>
+<p>注意： xxxx是这个md文件的名字，也是同名文件夹的名字。只需要有文件夹名字即可，不需要有什么绝对路径。你想引入的图片就只需要放入xxxx这个文件夹内就好了，很像引用相对路径。</p>
+<p>5 最后检查一下，hexo g生成页面后，进入public\2017\02\26\index.html文件中查看相关字段，可以发现，html标签内的语句是<img src="2017/02/26/xxxx/图片名.jpg">，而不是&lt;img src=”xxxx/图片名.jpg&gt;。这很重要，关乎你的网页是否可以真正加载你想插入的图片。</p>
+<p>Second</p>
+<p>本地source中建立img文件夹</p>
+<img src="img/图片名.jpg">
+
+<p>这个比较方便<br>Third</p>
+<p>图床，不太稳定。</p>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <p>&copy; 2019 <a href="http://cqh.ch/" target="_blank" rel="noopener">CQH</a>, By <a href="http://ande.studio/" target="_blank" rel="noopener">AndeStudio</a>.</p>
+</footer>
+
+
+
+</body></html>
+
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.xml"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+
+<script src="/js/index.js"></script>
+<script src="/js/baidu.js"></script>
+<script src="/js/jquery.min.js"></script>

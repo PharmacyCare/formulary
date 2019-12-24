@@ -1,0 +1,190 @@
+<!DOCTYPE html><html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="keywords" content="debug,">
+	
+	
+	<meta name="description" content="添加sitemap首先给你的文章生成sitemap文件 <figure class="highlight plai">
+	
+
+	<title> hexo debug - CQH.CH</title>
+
+	<link rel="stylesheet" href="/css/aircloud.css">
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+</div>
+
+<div class="index-about">
+    <i> Capital of Quant and Hedge </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="/" />
+        </div>
+        <div class="name">
+            <i>Ande.Studio</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#添加sitemap"><span class="toc-text">添加sitemap</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署优化"><span class="toc-text">部署优化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更换主题"><span class="toc-text">更换主题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#下载Next主题"><span class="toc-text">下载Next主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#启用主题"><span class="toc-text">启用主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#验证主题"><span class="toc-text">验证主题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#首页标题优化"><span class="toc-text">首页标题优化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关键词与描述"><span class="toc-text">关键词与描述</span></a></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> Capital of Quant and Hedge </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        hexo debug
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2019-12-22 17:54:54</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#debug" title="debug">debug</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h2 id="添加sitemap"><a href="#添加sitemap" class="headerlink" title="添加sitemap"></a>添加sitemap</h2><p>首先给你的文章生成sitemap文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save #sitemap.xml适合提交给谷歌搜素引擎</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-baidu-sitemap --save #baidusitemap.xml适合提交百度搜索引擎</span></pre></td></tr></table></figure>
+<p><strong>注意 npm install需要安装到你的hexo工作目录下</strong><br>然后在站点配置文件_config.yml中添加以下代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"># 自动生成sitemap</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">sitemap:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"> path: sitemap.xml</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">baidusitemap:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"> path: baidusitemap.xml</span></pre></td></tr></table></figure>
+<p><strong>注意 path前面需有空格，以成为sitemap的子项，否则hexo v3以上版本会报出以下类似错误(但在hexo v2中前无空格)：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">FATAL duplicated mapping key at line 106, column 1:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    path: baidusitemap.xml</span></pre></td></tr></table></figure>
+<p>每次hexo g后都会在/public目录下生成sitemap.xml和baidusitemap.xml，这就是你的站点地图。</p>
+<h2 id="部署优化"><a href="#部署优化" class="headerlink" title="部署优化"></a>部署优化</h2><p>每次都要执行 hexo clean，hexo generate，hexo deploy和hexo server，可以在package.json文件的”scripts”: {}项下，将命令用&amp;&amp;合并起来</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  &quot;scripts&quot;: &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    &quot;build&quot;: &quot;hexo generate&quot;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    &quot;clean&quot;: &quot;hexo clean&quot;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    &quot;deploy&quot;: &quot;hexo deploy&quot;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    &quot;server&quot;: &quot;hexo server&quot;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    &quot;cgds&quot;: &quot;hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy &amp;&amp; hexo server&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">  &#125;,</span></pre></td></tr></table></figure>
+<p>如此之后，用npm run cgds就可以完成清除、生成、部署、启动服务器。</p>
+<h2 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h2><p>更换主题主要是两步，先下载主题然后放到博客中的themes文件夹（专门用来存放主题）下，再修改主题的配置文件_config.yml中相关参数，启用themes文件夹下新增的主题。以Next主题示例：</p>
+<h3 id="下载Next主题"><a href="#下载Next主题" class="headerlink" title="下载Next主题"></a>下载Next主题</h3><p>进入hexo根目录输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next themes&#x2F;next</span></pre></td></tr></table></figure>
+<p>把主题包克隆到themes文件夹中即可。</p>
+<h3 id="启用主题"><a href="#启用主题" class="headerlink" title="启用主题"></a>启用主题</h3><p>与所有 Hexo 主题启用的模式一样。 当 克隆/下载 完成后，打开配置文件_config.yml， 找到 theme 字段，并将其值更改为 next（注意冒号后面要留一个 空格）。</p>
+<h3 id="验证主题"><a href="#验证主题" class="headerlink" title="验证主题"></a>验证主题</h3><p>清除并重新生成hexo静态文件，启动本地服务器，然后预览<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">hexo clean			#清除静态文件</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">hexo g			#重新生成静态文件</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">hexo s			#启动服务器</span></pre></td></tr></table></figure>
+
+<h2 id="首页标题优化"><a href="#首页标题优化" class="headerlink" title="首页标题优化"></a>首页标题优化</h2><p>SEO最重要的是你的标题，一般搜索都是搜索你的标题。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">更改index.swig文件(your-hexo-site\themes\next\layout);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">将下面这段代码：</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#123;% block title %&#125;&#123;&#123; title &#125;&#125;&#123;%- if theme.index_with_subtitle and subtitle %&#125; - &#123;&#123; subtitle &#125;&#125;&#123;%- endif %&#125;&#123;% endblock %&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&#123;% block title %&#125; &#123;&#123; config.title &#125;&#125; &#123;% endblock %&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">改成：</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">&#123;% block title %&#125; &#123;&#123; config.title &#125;&#125; - &#123;&#123; theme.description &#125;&#125; &#123;% endblock %&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">这时候你的首页会更符合网站名称 - 网站描述这习惯。</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">进阶，做了seo优化，把关键词也显示在title标题里，可改成：</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">&#123;% block title %&#125; &#123;&#123; theme.keywords &#125;&#125; - &#123;&#123; config.title &#125;&#125;&#123;&#123; theme.description &#125;&#125; &#123;% endblock %&#125;</span></pre></td></tr></table></figure>
+
+<p>注意：别堆砌关键字，整个标题一般不超过80个字符，可以通过chinaz的seo综合查询检查。</p>
+<h2 id="关键词与描述"><a href="#关键词与描述" class="headerlink" title="关键词与描述"></a>关键词与描述</h2><p>搜索引擎除了主要抓取标题外，页面的关键词和描述也会抓取。<br>在\scaffolds\post.md中添加如下代码，用于生成的文章中添加关键字和描述。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">keywords: </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">description:</span></pre></td></tr></table></figure>
+<p>在\themes\next\layout_partials\head.swig有如下代码，用于生成文章的keywords。暂时还没找到生成description的位置。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#123;% if page.keywords %&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  &lt;meta name&#x3D;&quot;keywords&quot; content&#x3D;&quot;&#123;&#123; page.keywords &#125;&#125;&quot; &#x2F;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#123;% elif page.tags and page.tags.length %&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  &lt;meta name&#x3D;&quot;keywords&quot; content&#x3D;&quot;&#123;% for tag in page.tags %&#125;&#123;&#123; tag.name &#125;&#125;,&#123;% endfor %&#125;&quot; &#x2F;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#123;% elif theme.keywords %&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  &lt;meta name&#x3D;&quot;keywords&quot; content&#x3D;&quot;&#123;&#123; theme.keywords &#125;&#125;&quot; &#x2F;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#123;% endif %&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">然后在\themes\next\layout_macro\post.swig中找到这个位置：</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">&#123;% if post.description %&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">将以下代码去掉：</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">&#123;% if post.description %&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">  &#123;&#123; post.description &#125;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">  &lt;div class&#x3D;&quot;post-more-link text-center&quot;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">    &lt;a class&#x3D;&quot;btn&quot; href&#x3D;&quot;&#123;&#123; url_for(post.path) &#125;&#125;&quot;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">      &#123;&#123; __(&#39;post.read_more&#39;) &#125;&#125; &amp;raquo;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">    &lt;&#x2F;a&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">  &lt;&#x2F;div&gt;</span></pre></td></tr></table></figure>
+<p>否则首页的文章摘要就会变成文章的description。</p>
+<p>举个例子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">---</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">title: HEXO SEO优化方法总结</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">copyright: true</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">top: 0</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">date: 2018-07-19 21:17:42</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">tags: SEO</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">categories: Debian</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">permalink:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">password:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">keywords: [HEXO,HEXO SEO优化]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">description: 总结一下使用Hexo搭建博客后，SEO优化方案的总结，后期会不定期更新。</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">---</span></pre></td></tr></table></figure>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <p>&copy; 2019 <a href="http://cqh.ch/" target="_blank" rel="noopener">CQH</a>, By <a href="http://ande.studio/" target="_blank" rel="noopener">AndeStudio</a>.</p>
+</footer>
+
+
+
+</body></html>
+
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.xml"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+
+<script src="/js/index.js"></script>
+<script src="/js/baidu.js"></script>
+<script src="/js/jquery.min.js"></script>

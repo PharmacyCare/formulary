@@ -1,0 +1,160 @@
+<!DOCTYPE html><html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="keywords" content="">
+	
+	
+	<meta name="description" content="iCalendar是由RFC5545定义的一种日历日程文件规范，扩展名名为ics，下面是对一份导出日历备注学习 <figur">
+	
+
+	<title> iCalendar学习研究 - CQH.CH</title>
+
+	<link rel="stylesheet" href="/css/aircloud.css">
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+</div>
+
+<div class="index-about">
+    <i> Capital of Quant and Hedge </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="/" />
+        </div>
+        <div class="name">
+            <i>Ande.Studio</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> Capital of Quant and Hedge </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        iCalendar学习研究
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2019-07-28 18:38:50</span></span>
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <p>iCalendar是由<a href="https://tools.ietf.org/html/rfc5545" target="_blank" rel="noopener">RFC5545</a>定义的一种日历日程文件规范，扩展名名为ics，下面是对一份导出日历备注学习</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">BEGIN:VCALENDAR</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">PRODID:-&#x2F;&#x2F;ACal&#x2F;&#x2F;Ande.Studio</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">VERSION:2.0</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">METHOD:PUBLISH</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">CALSCALE:GREGORIAN</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">X-WR-TIMEZONE:Asia&#x2F;Shanghai</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">BEGIN:VEVENT</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">DTSTAMP:20190701T000000Z</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">UID:1@wt201907</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">SUMMARY:日历事件一</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">DTSTART:20190701T080000</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">DTEND:20190701T120000</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">BEGIN:VALARM</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">TRIGGER:-PT10M</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">ACTION:DISPLAY</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">END:VALARM</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">END:VEVENT</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">BEGIN:VEVENT</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">DTSTAMP:20190701T000000Z</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">UID:2@wt201907</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">SUMMARY:日历事件二</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">DTSTART;VALUE&#x3D;DATE:20190715</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">DTEND;VALUE&#x3D;DATE:20190716</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">END:VEVENT</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">END:VCALENDAR</span></pre></td></tr></table></figure>
+<p>日历总体被包含在VCALENDAR标签对之中。开头指定一些基本信息中值得注意的是X-WR-TIMEZONE用来指定时区，加上这条标记可以避免后面时间逐个指定时区，减少冗余。</p>
+<p>VEVENT定义事件，DTSTAMP是事件创建时间。UID是事件识别码，必须唯一。SUMMARY是事件的描述。DTSTART与DTEND分别是事件的开始与结束时间，若只为日期，应加;VALUE=DATE限定。</p>
+<p>VALARM定义提醒，其必须镶嵌在VEVENT之中，一个事件可以有多个VALARM（某些应用可能不支持）。TRIGGER为触发提醒的时点，默认是与DTSTART关联的，-PT10M意为开始前10分钟，-号为必需。不带-号并不会被当然地理解为开始后的时点。也可以将触发与结束时间相关联，此时应加;RELATED=END限定（某些应用可能不支持）。ACTION为提醒的动作。</p>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <p>&copy; 2019 <a href="http://cqh.ch/" target="_blank" rel="noopener">CQH</a>, By <a href="http://ande.studio/" target="_blank" rel="noopener">AndeStudio</a>.</p>
+</footer>
+
+
+
+</body></html>
+
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.xml"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+
+<script src="/js/index.js"></script>
+<script src="/js/baidu.js"></script>
+<script src="/js/jquery.min.js"></script>
