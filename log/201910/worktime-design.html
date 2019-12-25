@@ -3,17 +3,24 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<meta name="keywords" content="排班,">
+	<meta name="keywords" content="医院,排班">
 	
 	
-	<meta name="description" content="为什么要思考排班的算法设计？当然是因为排班需要用到啊！记得当初学C语言的时候，老师说如果一段代码你写两次，最好封装成一个函数。这个函数思想深深的影响了我，以至于我把它扩展成：如果一件事情要重复做，最好做出一个可以调用的功能模块。可同时也有个问题困扰着我，要写出这个算法最少起码得花上24个小时吧">
+	<meta name="description" content=" 为什么要思考排班的算法设计？当然是因为排班需要用到啊！记得当初学C语言的时候，老师说如果一段代码你写两次，最好封装成一个函数。这个函数思想深深的影响了我，以至于我把它扩展成：如果一件事情要重复做，最好做出一个可以调用的功能模块。可同时也有个问题困扰着我，要写出这个算法最少起码得花上2">
 	
-	<title> 算法漫步——排班算法设计 - CQH.CH</title>
+	<title> 算法漫步-排班算法设计 - CQH.CH</title>
 	<link rel="stylesheet" href="/log/css/zerone.css">
 </head>
 
 <body>
 
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
 
 <div class="index-about">
     <i> Capital of Quant and Hedge </i>
@@ -24,7 +31,14 @@
     <div class="index-left">
         
 <div class="nav" id="nav">
-
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="/log/" />
+        </div>
+        <div class="name">
+            <i>Ande.Studio</i>
+        </div>
+    </div>
     <div class="contents" id="nav-content">
         <ul>
             <li >
@@ -91,7 +105,7 @@
         <!-- Main Content -->
         <div class="post-container">
     <div class="post-title">
-        算法漫步——排班算法设计
+        算法漫步-排班算法设计
     </div>
 
     <div class="post-meta">
@@ -99,7 +113,7 @@
         
         <span class="attr">Tags：/
         
-        <a class="tag" href="/log/tags/#排班" title="排班">排班</a>
+        <a class="tag" href="/log/tags/#自动化" title="自动化">自动化</a>
         <span>/</span>
         
         
@@ -108,7 +122,8 @@
 </span>
     </div>
     <div class="post-content ">
-        <p>为什么要思考排班的算法设计？当然是因为排班需要用到啊！记得当初学C语言的时候，老师说如果一段代码你写两次，最好封装成一个函数。这个函数思想深深的影响了我，以至于我把它扩展成：如果一件事情要重复做，最好做出一个可以调用的功能模块。可同时也有个问题困扰着我，要写出这个算法最少起码得花上24个小时吧，而排一个班只需要0.5个小时，写代码的时间已然够我排4年的班了…看问题不能太狭隘，虽然这个算法我可能4个月都用不到，但还有很多人用得到，只要整体节省的时间超过了我付出的时间，对社会而言就是一种进步。带着这种想法，我挖下了这个坑。这篇文章是关于排班的算法设计，至于代码实现，那真的是个大坑——得慢慢填，我也不知道这个坑什么时候能填完…….</p>
+        <hr>
+<p>为什么要思考排班的算法设计？当然是因为排班需要用到啊！记得当初学C语言的时候，老师说如果一段代码你写两次，最好封装成一个函数。这个函数思想深深的影响了我，以至于我把它扩展成：如果一件事情要重复做，最好做出一个可以调用的功能模块。可同时也有个问题困扰着我，要写出这个算法最少起码得花上24个小时吧，而排一个班只需要0.5个小时，写代码的时间已然够我排4年的班了…看问题不能太狭隘，虽然这个算法我可能4个月都用不到，但还有很多人用得到，只要整体节省的时间超过了我付出的时间，对社会而言就是一种进步。带着这种想法，我挖下了这个坑。这篇文章是关于排班的算法设计，至于代码实现，那真的是个大坑——得慢慢填，我也不知道这个坑什么时候能填完…….</p>
 <p><strong>问题</strong></p>
 <p>假设医院某科室，三班轮倒，如何实现自动排班算法？</p>
 <p><strong>建模</strong></p>
@@ -137,10 +152,10 @@
     </div>
 </div>
 
-
 <footer class="footer">
-    <p>&copy; 2019 <a href="http://cqh.ch/" target="_blank" rel="noopener">CQH</a>, By <a href="http://ande.studio/" target="_blank" rel="noopener">AndeStudio</a>.</p>
+    <p>&copy; 2019 <a href="http://cqh.ch/" target="_blank" rel="noopener">CQH</a></p>
 </footer>
+
 
 
 
