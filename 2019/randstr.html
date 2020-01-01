@@ -1,0 +1,157 @@
+<!DOCTYPE html><html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="keywords" content="JavaScript,随机字符串,生成器">
+	
+	
+	<meta name="description" content="随机字符串生成器(JavaScript实现)，本地的，免安装的，很少依赖的，可定制的，也可远程的">
+	
+	<title> 随机字符串生成器(JavaScript实现) - CQH.CH</title>
+	<link rel="stylesheet" href="/css/zerone.css">
+<link rel="alternate" href="/atom.xml" title="CQH.CH" type="application/atom+xml">
+</head>
+
+<body>
+
+
+<div class="index-about">
+    <i> Capital of Quant and Hedge </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="/" />
+        </div>
+        <div class="name">
+            <i>Ande.Studio</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> Capital of Quant and Hedge </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        <div class="post-container">
+    <div class="post-title">
+        随机字符串生成器(JavaScript实现)
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2019-08-23 00:14:27</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#生成器" title="生成器">生成器</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#随机" title="随机">随机</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#字符串" title="字符串">字符串</a>
+        <span>/</span>
+        
+        
+        </span>
+
+    </div>
+
+    <div class="post-content no-indent">
+        <p><strong>问题</strong><br>随机字符串最常见的用法作密码生成器，网上有很多相关文章。但我的需求有点特殊：这个生成器应该是本地的，免安装的，很少依赖的，可定制的，也可远程的。这样就排除了需要安装的app，依赖于网络及第三方的小程序或其他网络应用。</p>
+<p><strong>解决方案</strong><br>javascript会是一个比较好的选择，只要嵌入进html文件中，就可以通过浏览器调用，实现本地化，免安装，很少依赖性。而通过地址栏的的url参数，实现可定制。而如果部署到网络空间上，可以远程调用。</p>
+<p>首先我们需要随机生成一个数字，Math.random()*m 生成一个0~m的随机数，然后用这个随机数索引出一个随机字符。</p>
+<p>可见字符的ascii码为33到126，以下取得随机字符的方法相当优雅：<br>String.fromCharCode(33 + Math.floor(Math.random()*(126-33)))<br>但因特殊字符分散在数字，大写字母，小写字母之间，并不连贯，要实现可定制比较费事。</p>
+<p>解决之道是，先定制一个字符母串strs，用strs[Math.floor(Math.random()*strs.length]取得随机字符。以下是代码实现：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">function randstr(args&#x3D;&#39;snul8&#39;)&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	&#x2F;&#x2F;s:special character特殊字符</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	&#x2F;&#x2F;n:number数字</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">	&#x2F;&#x2F;u:upper case大写字母</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">	&#x2F;&#x2F;l:lower case小写字母</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">	&#x2F;&#x2F;数字8用作控制生成随机字符的长度,也可以是其他数字</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">	&#x2F;&#x2F;默认参数snul8，生成8位随机字符串，包含特殊字符，数字和大小写字母</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">	var special &#x3D; &#39;!&quot;#$%&amp;\&#39;()*+,-.&#x2F;:;&lt;&#x3D;&gt;?@[\\]^_&#96;&#123;|&#125;~&#39;;&#x2F;&#x2F;有些特殊字符如&#39;和\要加\转义</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">	var number &#x3D; &#39;0123456789&#39;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">	var lower &#x3D; &#39;abcdefghijklmnopqrstuvwxyz&#39;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">	var upper &#x3D; &#39;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#39;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">	var strs &#x3D; &#39;&#39;;&#x2F;&#x2F;用作母串载体</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">	var str &#x3D; &#39;&#39;;&#x2F;&#x2F;用作随机字串载体</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">	var num&#x3D; args.replace(&#x2F;[^0-9]&#x2F;ig,&quot;&quot;);&#x2F;&#x2F;取得args中的数字，作密码长度</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">	if(args.search(&quot;s&quot;)!&#x3D;-1)&#123;&#x2F;&#x2F;如果args中有s,母串中含有特殊字符</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">	    strs +&#x3D; special;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">	if(args.search(&quot;n&quot;)!&#x3D;-1)&#123;&#x2F;&#x2F;如果args中有n,母串中含有数字</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">	    strs +&#x3D; number;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">	if(args.search(&quot;u&quot;)!&#x3D;-1)&#123;&#x2F;&#x2F;如果args中有u,母串中含有大写字母</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">	    strs +&#x3D; upper;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">	if(args.search(&quot;l&quot;)!&#x3D;-1)&#123;&#x2F;&#x2F;如果args中有l,母串中含有小写字母</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">	    strs +&#x3D; lower;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line">	var len &#x3D; strs.length;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">31</span></pre></td><td class="code"><pre><span class="line">	for (i&#x3D;0; i&lt;num; i++)&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">32</span></pre></td><td class="code"><pre><span class="line">	    j &#x3D; Math.floor(Math.random()*len);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">33</span></pre></td><td class="code"><pre><span class="line">	    str +&#x3D; strs[j]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">34</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">35</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">36</span></pre></td><td class="code"><pre><span class="line">	return str;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">37</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">38</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">39</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">40</span></pre></td><td class="code"><pre><span class="line">str &#x3D; randstr(&#39;l6un&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">41</span></pre></td><td class="code"><pre><span class="line">console.log(str);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">42</span></pre></td><td class="code"><pre><span class="line">alert(str);</span></pre></td></tr></table></figure>
+<p><img src="randstr.png" alt="随机字符生成器" title="随机字符生成器"></p>
+<p><strong>讨论</strong></p>
+<p>至此，我们已经实现了一个随机字符生成器，但要作为一个密码器使用，还是得完善一些东西。在某些浏览器上弹出窗口可能不能被复制，而很多移动终端并没有控制台，所以得将字符串写入网页中去。更进一步的，在网页还需要一键复制的按钮，以及远程保存的按钮。而如果涉及保存的话，还得实现加密，因为保存原始密码并不安全也不推荐。</p>
+
+        
+        <br />
+    </div>
+</div>
+
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2020 <a href="http://cqh.ch/" target="_blank" rel="noopener">CQH</a></p>
+</footer>
+
+
+
+
+</body></html>
+
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.xml"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+
+<script src="/js/index.js"></script>
+<script src="/js/baidu.js"></script>
+<script src="/js/jquery.min.js"></script>

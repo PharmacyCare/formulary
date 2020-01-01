@@ -1,0 +1,148 @@
+<!DOCTYPE html><html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="keywords" content="二手房,爬虫,58同城,赶集ganji">
+	
+	
+	<meta name="description" content="Python实现58同城,赶集网ganji的二手房产信息爬虫">
+	
+	<title> LAKIA-赶集网和58同城二手房爬虫 - CQH.CH</title>
+	<link rel="stylesheet" href="/css/zerone.css">
+<link rel="alternate" href="/atom.xml" title="CQH.CH" type="application/atom+xml">
+</head>
+
+<body>
+
+
+<div class="index-about">
+    <i> Capital of Quant and Hedge </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="/" />
+        </div>
+        <div class="name">
+            <i>Ande.Studio</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> Capital of Quant and Hedge </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        <div class="post-container">
+    <div class="post-title">
+        LAKIA-赶集网和58同城二手房爬虫
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2019-08-11 21:27:20</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#爬虫" title="爬虫">爬虫</a>
+        <span>/</span>
+        
+        
+        </span>
+
+    </div>
+
+    <div class="post-content no-indent">
+        <p>最近在关注房产信息，天天刷网页或者关注经纪人朋友圈真的是一件极其耗费心神的事情，趁着周末想着写个爬虫自动完成这件事情。</p>
+<p><img src="http://www.cqh.ch/wp-content/uploads/2019/08/talk-is-cheap-show-me-the-code.jpg" alt></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"># ErShouFang.py</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"># Ganji.com  58.com 二手房爬虫</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"># Ande.Studio (c) 2019-08-11</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">import requests</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">from lxml import etree</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">import time</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">cookies &#x3D; &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">headers &#x3D; &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">    &#39;User-Agent&#39;: &#39;Mozilla&#x2F;5.0 (X11; Linux x86_64; rv:68.0) Gecko&#x2F;20100101 Firefox&#x2F;68.0&#39;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">def GanjiErShouFang(url):</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">    response &#x3D; requests.post(url, headers&#x3D;headers, cookies&#x3D;cookies)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">    html &#x3D; response.text</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">    html &#x3D;  etree.HTML(html)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">    flist &#x3D; html.xpath(&#39;&#x2F;&#x2F;div[@class&#x3D;&quot;f-list-item ershoufang-list&quot;]&#39;)#房屋信息列表</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">    for f in flist:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">        title &#x3D; f.xpath(&#39;.&#x2F;&#x2F;dd[@class&#x3D;&quot;dd-item title&quot;]&#x2F;a&#x2F;text()&#39;)[0]#标题</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">        href &#x3D; f.xpath(&#39;.&#x2F;&#x2F;dd[@class&#x3D;&quot;dd-item title&quot;]&#x2F;a&#x2F;@href&#39;)[0]#链接地址</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">        layout &#x3D; f.xpath(&#39;.&#x2F;&#x2F;dd[@class&#x3D;&quot;dd-item size&quot;]&#x2F;span&#x2F;text()&#39;)[0]#布局</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">        size &#x3D;  f.xpath(&#39;.&#x2F;&#x2F;dd[@class&#x3D;&quot;dd-item size&quot;]&#x2F;span&#x2F;text()&#39;)[1]#面积大小</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">        toward &#x3D; f.xpath(&#39;.&#x2F;&#x2F;dd[@class&#x3D;&quot;dd-item size&quot;]&#x2F;span&#x2F;text()&#39;)[2]#朝向</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">        floor &#x3D; f.xpath(&#39;.&#x2F;&#x2F;dd[@class&#x3D;&quot;dd-item size&quot;]&#x2F;span&#x2F;text()&#39;)[3]#楼层</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">31</span></pre></td><td class="code"><pre><span class="line">        address &#x3D; f.xpath(&#39;.&#x2F;&#x2F;dd[@class&#x3D;&quot;dd-item address&quot;]&#x2F;span[@class&#x3D;&quot;area&quot;]&#x2F;a&#x2F;text()&#39;)[0]#所在地址</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">32</span></pre></td><td class="code"><pre><span class="line">        area &#x3D;  f.xpath(&#39;.&#x2F;&#x2F;dd[@class&#x3D;&quot;dd-item address&quot;]&#x2F;&#x2F;span[@class&#x3D;&quot;address-eara&quot;]&#x2F;text()&#39;)[0]#小区</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">33</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">34</span></pre></td><td class="code"><pre><span class="line">        organization &#x3D; f.xpath(&#39;.&#x2F;&#x2F;dd[@class&#x3D;&quot;dd-item address&quot;]&#x2F;span[@class&#x3D;&quot;area&quot;]&#x2F;text()&#39;)[3]#发布组织</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">35</span></pre></td><td class="code"><pre><span class="line">        organization &#x3D; organization.replace(&quot; &quot;, &#39;&#39;).replace(&quot;－&quot;, &#39;&#39;).replace(&quot;\n&quot;, &#39;&#39;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">36</span></pre></td><td class="code"><pre><span class="line">        manager &#x3D;  f.xpath(&#39;.&#x2F;&#x2F;dd[@class&#x3D;&quot;dd-item address&quot;]&#x2F;&#x2F;span[@class&#x3D;&quot;address-eara&quot;]&#x2F;text()&#39;)[1]#经纪人</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">37</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">38</span></pre></td><td class="code"><pre><span class="line">        price &#x3D;  f.xpath(&#39;.&#x2F;&#x2F;dd[@class&#x3D;&quot;dd-item info&quot;]&#x2F;div[@class&#x3D;&quot;price&quot;]&#x2F;span[@class&#x3D;&quot;num&quot;]&#x2F;text()&#39;)[0]#房屋总价</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">39</span></pre></td><td class="code"><pre><span class="line">        average &#x3D;  f.xpath(&#39;.&#x2F;&#x2F;dd[@class&#x3D;&quot;dd-item info&quot;]&#x2F;div[@class&#x3D;&quot;time&quot;]&#x2F;text()&#39;)[0]#房屋单价</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">40</span></pre></td><td class="code"><pre><span class="line">        average &#x3D; average.replace(&quot;元&#x2F;㎡&quot;, &#39;&#39;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">41</span></pre></td><td class="code"><pre><span class="line">        print(title)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">42</span></pre></td><td class="code"><pre><span class="line">    print(&quot;#&quot;*50)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">43</span></pre></td><td class="code"><pre><span class="line">    try:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">44</span></pre></td><td class="code"><pre><span class="line">        nextpage &#x3D; html.xpath(&#39;&#x2F;&#x2F;div[@class&#x3D;&quot;pageBox&quot;]&#x2F;&#x2F;a[@class&#x3D;&quot;next&quot;]&#x2F;@href&#39;)[0]#下一页</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">45</span></pre></td><td class="code"><pre><span class="line">        time.sleep(3)#休息3秒，以防过频繁导致机器人验证</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">46</span></pre></td><td class="code"><pre><span class="line">        GanjiErShouFang(nextpage)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">47</span></pre></td><td class="code"><pre><span class="line">    except:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">48</span></pre></td><td class="code"><pre><span class="line">        pass</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">49</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">50</span></pre></td><td class="code"><pre><span class="line">def WubaErShouFang(url):</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">51</span></pre></td><td class="code"><pre><span class="line">    response &#x3D; requests.get(url, headers&#x3D;headers)#post will get nothing, get is ok!</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">52</span></pre></td><td class="code"><pre><span class="line">    html &#x3D; response.text</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">53</span></pre></td><td class="code"><pre><span class="line">    html &#x3D;  etree.HTML(html)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">54</span></pre></td><td class="code"><pre><span class="line">    flist &#x3D; html.xpath(&#39;&#x2F;&#x2F;ul[@class&#x3D;&quot;house-list-wrap&quot;]&#x2F;li&#39;)#房屋信息列表</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">55</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">56</span></pre></td><td class="code"><pre><span class="line">    for f in flist:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">57</span></pre></td><td class="code"><pre><span class="line">        title  &#x3D; f.xpath(&#39;.&#x2F;&#x2F;h2[@class&#x3D;&quot;title&quot;]&#x2F;a&#x2F;text()&#39;)[0]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">58</span></pre></td><td class="code"><pre><span class="line">        href &#x3D; f.xpath(&#39;.&#x2F;&#x2F;h2[@class&#x3D;&quot;title&quot;]&#x2F;a&#x2F;@href&#39;)[0]#链接地址</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">59</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">60</span></pre></td><td class="code"><pre><span class="line">        layout &#x3D; f.xpath(&#39;.&#x2F;&#x2F;p[@class&#x3D;&quot;baseinfo&quot;]&#x2F;span&#x2F;text()&#39;)[0]#布局</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">61</span></pre></td><td class="code"><pre><span class="line">        size &#x3D;  f.xpath(&#39;.&#x2F;&#x2F;p[@class&#x3D;&quot;baseinfo&quot;]&#x2F;span&#x2F;text()&#39;)[1]#面积大小</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">62</span></pre></td><td class="code"><pre><span class="line">        toward &#x3D; f.xpath(&#39;.&#x2F;&#x2F;p[@class&#x3D;&quot;baseinfo&quot;]&#x2F;span&#x2F;text()&#39;)[2]#朝向</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">63</span></pre></td><td class="code"><pre><span class="line">        floor &#x3D; f.xpath(&#39;.&#x2F;&#x2F;p[@class&#x3D;&quot;baseinfo&quot;]&#x2F;span&#x2F;text()&#39;)[3]#楼层</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">64</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">65</span></pre></td><td class="code"><pre><span class="line">        address &#x3D; f.xpath(&#39;.&#x2F;&#x2F;p[@class&#x3D;&quot;baseinfo&quot;]&#x2F;&#x2F;a&#x2F;text()&#39;)[1]#所在地址</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">66</span></pre></td><td class="code"><pre><span class="line">        area &#x3D;  f.xpath(&#39;.&#x2F;&#x2F;p[@class&#x3D;&quot;baseinfo&quot;]&#x2F;&#x2F;a&#x2F;text()&#39;)[0]#小区</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">67</span></pre></td><td class="code"><pre><span class="line">        #road &#x3D;  f.xpath(&#39;.&#x2F;&#x2F;p[@class&#x3D;&quot;baseinfo&quot;]&#x2F;&#x2F;a&#x2F;text()&#39;)[2]#</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">68</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">69</span></pre></td><td class="code"><pre><span class="line">        #organization &#x3D; f.xpath(&#39;.&#x2F;&#x2F;div[@class&#x3D;&quot;jjrinfo&quot;]&#x2F;&#x2F;span[@class&#x3D;&quot;anxuan-qiye-text&quot;]&#x2F;text()&#39;)[0]#发布组织</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">70</span></pre></td><td class="code"><pre><span class="line">        #manager &#x3D;  f.xpath(&#39;.&#x2F;&#x2F;div[@class&#x3D;&quot;jjrinfo&quot;]&#x2F;&#x2F;span[@class&#x3D;&quot;jjrname-outer&quot;]&#x2F;text()&#39;)[0]#经纪人</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">71</span></pre></td><td class="code"><pre><span class="line">        #当经纪人为个人时， &lt;span class&#x3D;&quot;jjrname-outer anxuan-qiye-text&quot;&gt;xxx&lt;&#x2F;span&gt; 故用class定位将会出现意外</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">72</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">73</span></pre></td><td class="code"><pre><span class="line">        organization &#x3D; f.xpath(&#39;.&#x2F;&#x2F;div[@class&#x3D;&quot;jjrinfo&quot;]&#x2F;&#x2F;span&#x2F;text()&#39;)[0]#发布组织</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">74</span></pre></td><td class="code"><pre><span class="line">        manager &#x3D;  f.xpath(&#39;.&#x2F;&#x2F;div[@class&#x3D;&quot;jjrinfo&quot;]&#x2F;&#x2F;span&#x2F;text()&#39;)[2]#经纪人</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">75</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">76</span></pre></td><td class="code"><pre><span class="line">        price &#x3D;  f.xpath(&#39;.&#x2F;&#x2F;div[@class&#x3D;&quot;price&quot;]&#x2F;p[@class&#x3D;&quot;sum&quot;]&#x2F;b&#x2F;text()&#39;)[0]#房屋总价</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">77</span></pre></td><td class="code"><pre><span class="line">        average &#x3D;  f.xpath(&#39;.&#x2F;&#x2F;div[@class&#x3D;&quot;price&quot;]&#x2F;p[@class&#x3D;&quot;unit&quot;]&#x2F;text()&#39;)[0]#房屋单价</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">78</span></pre></td><td class="code"><pre><span class="line">        average &#x3D; average.replace(&quot;元&#x2F;㎡&quot;, &#39;&#39;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">79</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">80</span></pre></td><td class="code"><pre><span class="line">        #time &#x3D; f.xpath(&#39;.&#x2F;&#x2F;div[@class&#x3D;&quot;time&quot;]&#x2F;text()&#39;)[0]#发布时间</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">81</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">82</span></pre></td><td class="code"><pre><span class="line">        print(title)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">83</span></pre></td><td class="code"><pre><span class="line">    print(&quot;#&quot;*50)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">84</span></pre></td><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">85</span></pre></td><td class="code"><pre><span class="line">    try:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">86</span></pre></td><td class="code"><pre><span class="line">        nextpage &#x3D; html.xpath(&#39;&#x2F;&#x2F;div[@class&#x3D;&quot;pager&quot;]&#x2F;&#x2F;a[@class&#x3D;&quot;next&quot;]&#x2F;@href&#39;)[0]#下一页</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">87</span></pre></td><td class="code"><pre><span class="line">        time.sleep(3)#休息3秒，以防过频繁导致机器人验证</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">88</span></pre></td><td class="code"><pre><span class="line">        WubaErShouFang( &#39;https:&#x2F;&#x2F;ganzhou.58.com&#39; + nextpage)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">89</span></pre></td><td class="code"><pre><span class="line">    except:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">90</span></pre></td><td class="code"><pre><span class="line">       pass</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">91</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">92</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">93</span></pre></td><td class="code"><pre><span class="line">url &#x3D; &#39;http:&#x2F;&#x2F;ganzhou.ganji.com&#x2F;shangyou&#x2F;ershoufang&#x2F;&#39;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">94</span></pre></td><td class="code"><pre><span class="line">GanjiErShouFang(url)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">95</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">96</span></pre></td><td class="code"><pre><span class="line">url &#x3D; &#39;https:&#x2F;&#x2F;ganzhou.58.com&#x2F;shangyou&#x2F;ershoufang&#x2F;&#39;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">97</span></pre></td><td class="code"><pre><span class="line">WubaErShouFang(url)</span></pre></td></tr></table></figure>
+<p>运行结果：</p>
+<p><img src="ershoufang.png" alt="运行结果" title="运行结果"></p>
+<p>本来想着这是一个很小的项目，杀鸡焉用牛刀，所以放弃了使用Scrapy，自己从头写一个爬虫就够用了，但事情并不是如此简单。写爬虫的目的是为了获得数据从而利于决策，并不是简单输出就了事。首先它得提示我新的房产信息，其次它得在众多信息中计算性价比较高的选择，由此就埋下了两个坑。同时，在编程的过程中，我产了两个新的想法：一是对全国的房产数据进行取样制作房价指数，以利投资分析；二是不局限于房产信息，可以抓取其他数据发挥利用的价值。所以到头来，还是得用到框架。</p>
+
+        
+        <br />
+    </div>
+</div>
+
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2020 <a href="http://cqh.ch/" target="_blank" rel="noopener">CQH</a></p>
+</footer>
+
+
+
+
+</body></html>
+
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.xml"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+
+<script src="/js/index.js"></script>
+<script src="/js/baidu.js"></script>
+<script src="/js/jquery.min.js"></script>

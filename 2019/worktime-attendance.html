@@ -1,0 +1,164 @@
+<!DOCTYPE html><html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="keywords" content="医院,排班,考勤,办公,自动化">
+	
+	
+	<meta name="description" content="由排班表自动生成考勤登记表和考勤统计表,并将其整合成一个东西,再根据考勤统计表自动对比考勤机数据,从而实现高效办公">
+	
+	<title> 革新记之工作日程管理-考勤记录 - CQH.CH</title>
+	<link rel="stylesheet" href="/css/zerone.css">
+<link rel="alternate" href="/atom.xml" title="CQH.CH" type="application/atom+xml">
+</head>
+
+<body>
+
+
+<div class="index-about">
+    <i> Capital of Quant and Hedge </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="/" />
+        </div>
+        <div class="name">
+            <i>Ande.Studio</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> Capital of Quant and Hedge </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        <div class="post-container">
+    <div class="post-title">
+        革新记之工作日程管理-考勤记录
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2019-12-02 01:20:36</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#革新" title="革新">革新</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#办公" title="办公">办公</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#自动化" title="自动化">自动化</a>
+        <span>/</span>
+        
+        
+        </span>
+
+    </div>
+
+    <div class="post-content no-indent">
+        <h1><span id="ge-xin-ji-zhi-gong-zuo-ri-cheng-guan-li-kao-qin-ji-lu">革新记之工作日程管理-考勤记录</span><a href="#ge-xin-ji-zhi-gong-zuo-ri-cheng-guan-li-kao-qin-ji-lu" class="header-anchor"></a></h1><p>我真的很不喜欢无意义的简单重复，如果一件事情会重复，那么就应该考虑自动化的可能。这篇文章我要捣鼓的是考勤的问题。</p>
+<p>考勤的流程是：月初排班——每日考勤登记——月末考勤统计。 我觉得这是一件很没有技术含量的事情，但是一旦出错，那绝对是严重影响生活质量的大事情。</p>
+<p>我的设想是这样子的：<br>第一，既然有排班表，那么可以由排班表生成考勤登记表和考勤统计表；<br>第二，考勤登记表和考勤统计表完全可以整合成一个东西；<br>第三，可以根据考勤统计表自动对比考勤机数据（这一步不涉及我的工作，暂不表）。<br>第四，数据的共享及自动化将带来高效办公。</p>
+<p>首先，要先编出排班表。因为上次研究的<a href="http://www.cqh.ch/log/201910/worktime-design.html">算法漫步——排班算法设计</a>还没完成，我决定先使用办公表格实现我想要的东西，并且不使用宏编程而是单纯的公式，因为单位的电脑可能不支持宏。</p>
+<p>先讲述下排班的思路设计：<br>主班排1人，值班排1人，休假排1人，补休排1人（昨日值班），其余人（若有）副班。因此，实际要编排的是主班、值班和休假的人员。<br>其他可以根据已有信息运算出来，比如：<br>补休的C7=B5,填充时注意首尾就可以了;<br>有点挑战的是副班的运算，我的思路将所有人定义成一个字符串，然后用SUBSTITUTE()公式将主班、值班、休假、补休替换成空字符，即可得到B8=<br>SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE($A$2,LEFT(B5,1),””),B4,””),B6,””),B7,””)。</p>
+<p><img src="worktimeII1.png" alt="SUBSTITUTE" title="SUBSTITUTE"></p>
+<p>然后，要根据排班表生成比较方便比对的信息串，我的思路是用&amp;连字符将主班、值班、休假、补休、副班、日期拼接成一个字符串，至于为什么按这种顺序拼接后面会讲到。这些信息串最好按阵列放置，以便下一步引用，如图：</p>
+<p><img src="worktimeII2.png" alt="信息阵列" title="信息阵列"></p>
+<p>再者，信息的加工提取。先将信息阵列投射成信息串单列表，然后就可以做信息处理了：<br>日期C84=INT(MID(B84,6,2));<br>考勤状态的确定略显复杂，需要用到FIND()查找组合多重IF判断。思路是这样的：用FIND()得到信息串的索引，若为1则是主班标√，若为2则是值班标□，若为3则是休假标△，若为4则为补休标+，其他是副班标√。<br>D84=IF(FIND($D$83,B84,1)=1,”√”, IF(FIND($D$83,B84,1)=2,”□”, IF(FIND($D$83,B84,1)=3,”△”, IF(FIND($D$83,B84,1)=4,”+”,”√”))))</p>
+<p><img src="worktimeII3.png" alt="FIND()查找组合多重IF判断" title="FIND()查找组合多重IF判断"></p>
+<p>最后，将上步得到的信息按日期升序，转置变成横向，再适当编辑下，即可得到考勤记录表。</p>
+<p><img src="worktimeII4.png" alt="考勤记录表-纵向" title="考勤记录表-纵向"></p>
+<p><img src="worktimeII5.png" alt="考勤记录表-横向" title="考勤记录表-横向"></p>
+<p>至此，由排班表生存考勤记录表的工作基本完成。之所以花时间去做出于两点原因：</p>
+<p>其一是因为实现数据间的共享，可以省却很多不必要的工作。在有排班表的前提下，只要写个宏脚本，那么就可以自动生成一份考勤记录。每日只要在这份表上登记，月末自然就完成了统计。而有预排班做对照，考勤出现错误的情况能很好的比对出来。</p>
+<p>其二是有过仅仅忘了打卡就白送一天的加班（没错双倍工资的那种）的经历，让我意识到，唯有用按部就班的程序方能对抗机械的制度及人。但仅仅确保考勤的正确是远远不够的，因为你无法确保和考勤机的数据是一致的，这才是最致命的。在尝试过让单位公开考勤机数据以便提前备注而未果之后，我能做到的确保自己无论如何不要忘记打卡，因此决定重启GTD体系，用日历和任务列表确保单位无法再因考勤问题扣我一分钱。是的，这个项目到这里并没有结束，下一步，我要做的是由排班表生成工作日历和任务列表。</p>
+
+        
+        <br />
+    </div>
+</div>
+
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2020 <a href="http://cqh.ch/" target="_blank" rel="noopener">CQH</a></p>
+</footer>
+
+
+
+
+</body></html>
+
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.xml"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+
+<script src="/js/index.js"></script>
+<script src="/js/baidu.js"></script>
+<script src="/js/jquery.min.js"></script>

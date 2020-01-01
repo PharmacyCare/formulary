@@ -1,0 +1,165 @@
+<!DOCTYPE html><html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="keywords" content="FireFox,Https,Python,爬虫,SSLError,金交所">
+	
+	
+	<meta name="description" content="SEC_ERROR_UNKNOWN_ISSUER + ssl.SSLCertVerificationError + urllib3.exceptions.MaxRetryError + requests.exceptions.SSLError">
+	
+	<title> LAKIA——SEC_ERROR_UNKNOWN_ISSUER + ssl.SSLCertVerificationError + urllib3.exceptions.MaxRetryError + requests.exceptions.SSLError - CQH.CH</title>
+	<link rel="stylesheet" href="/css/zerone.css">
+<link rel="alternate" href="/atom.xml" title="CQH.CH" type="application/atom+xml">
+</head>
+
+<body>
+
+
+<div class="index-about">
+    <i> Capital of Quant and Hedge </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="/" />
+        </div>
+        <div class="name">
+            <i>Ande.Studio</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> Capital of Quant and Hedge </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        <div class="post-container">
+    <div class="post-title">
+        LAKIA——SEC_ERROR_UNKNOWN_ISSUER + ssl.SSLCertVerificationError + urllib3.exceptions.MaxRetryError + requests.exceptions.SSLError
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2019-10-30 21:06:00</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#debug" title="debug">debug</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#爬虫" title="爬虫">爬虫</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#Python" title="Python">Python</a>
+        <span>/</span>
+        
+        
+        </span>
+
+    </div>
+
+    <div class="post-content no-indent">
+        <p>2019年10月29日，我定向爬取金交所网站的爬虫出了故障，抛出ssl.SSLCertVerificationError + urllib3.exceptions.MaxRetryError + requests.exceptions.SSLError错误。金交所的数据对我的量化对冲研究至关重要，所以有了这篇Debug的文章。</p>
+<p>用FireFox打开金交所的网站，页面如图：</p>
+<p><img src="FireFox1.png" alt="warning: Potential Security Risk Ahead" title="warning: Potential Security Risk Ahead"></p>
+<p>Advanced，Error code: SEC_ERROR_UNKNOWN_ISSUER</p>
+<p><img src="FireFox2.png" alt="Error code: SEC\_ERROR\_UNKNOWN_ISSUER" title="Error code: SEC_ERROR_UNKNOWN_ISSUER"></p>
+<p>Who care…Accept the Risk Continue</p>
+<p><img src="FireFox3.png" alt="Connection Is Not Secure" title="Connection Is Not Secure"></p>
+<p>Webpage works well unless you Remove Exception。</p>
+<p>我并不关心金交所的ssl证书是否安全，我只关心中国贵金属的交易数据，所以我选择了无视。</p>
+<p>回到爬虫上来，三个报错具体如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">ssl.SSLCertVerificationError: \[SSL: CERTIFICATE\_VERIFY\_FAILED\] certificate verify failed: unable to get local issuer certificate (_ssl.c:1076)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host&#x3D;&#39;www.sge.com.cn&#39;, port&#x3D;443): Max retries exceeded with url: &#x2F;graph&#x2F;quotations (Caused by SSLError(SSLCertVerificationError(1, &#39;\[SSL: CERTIFICATE\_VERIFY\_FAILED\] certificate verify failed: unable to get local issuer certificate (_ssl.c:1076)&#39;)))</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">requests.exceptions.SSLError: HTTPSConnectionPool(host&#x3D;&#39;www.sge.com.cn&#39;, port&#x3D;443): Max retries exceeded with url: &#x2F;graph&#x2F;quotations (Caused by SSLError(SSLCertVerificationError(1, &#39;\[SSL: CERTIFICATE\_VERIFY\_FAILED\] certificate verify failed: unable to get local issuer certificate (_ssl.c:1076)&#39;)))</span></pre></td></tr></table></figure>
+<p>后两个错误Caused by SSLError(SSLCertVerificationError)，因此先来解决第一个SSLCertVerificationError问题。</p>
+<p>requests发生https请求时默认启用SSL验证，如果无法验证SSL证书，将会引发SSLError。故在发送请求时设置verify=False就好。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">response &#x3D; requests.post(url, headers&#x3D;headers, cookies&#x3D;cookies, data&#x3D;data, verify&#x3D;False)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">将验证关闭之后，程序可以运行，但会抛出如下警告：  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#x2F;usr&#x2F;lib&#x2F;python3.7&#x2F;site-packages&#x2F;urllib3&#x2F;connectionpool.py:851: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https:&#x2F;&#x2F;urllib3.readthedocs.io&#x2F;en&#x2F;latest&#x2F;advanced-usage.html#ssl-warnings  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">InsecureRequestWarning)</span></pre></td></tr></table></figure>
+<p>这也很烦人，知道这是一个不安全的请求，不用一再的提醒，禁用安全提示就好。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">import urllib3</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">\# 禁用安全请求警告</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)</span></pre></td></tr></table></figure>
+<p>至此，问题解决，谨以此记。</p>
+
+        
+        <br />
+    </div>
+</div>
+
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2020 <a href="http://cqh.ch/" target="_blank" rel="noopener">CQH</a></p>
+</footer>
+
+
+
+
+</body></html>
+
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.xml"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+
+<script src="/js/index.js"></script>
+<script src="/js/baidu.js"></script>
+<script src="/js/jquery.min.js"></script>
