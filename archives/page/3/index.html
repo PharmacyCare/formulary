@@ -26,43 +26,43 @@
 <div class="nav" id="nav">
     <div class="avatar-name">
         <div class="avatar ">
-            <img src="/" />
+            <img src="/src/avatar.jpg" />
         </div>
         <div class="name">
-            <i>Ande.Studio</i>
+            <i>CQH.CH</i>
         </div>
     </div>
     <div class="contents" id="nav-content">
         <ul>
             <li >
                 <a href="/">
-                    <i class="iconfont icon-shouye1"></i>
-                    <span>HOME</span>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li >
+                <a href="/categories">
+                    <span>Categories</span>
                 </a>
             </li>
             <li >
                 <a href="/tags">
-                    <i class="iconfont icon-biaoqian1"></i>
-                    <span>TAGS</span>
+                    <span>Tags</span>
                 </a>
             </li>
             <li  class=active >
                 <a href="/archives">
-                    <i class="iconfont icon-guidang2"></i>
-                    <span>ARCHIVES</span>
+                    <span>Archives</span>
                 </a>
             </li>
             <li >
                 <a href="/about/">
-                    <i class="iconfont icon-guanyu2"></i>
-                    <span>ABOUT</span>
+                    <span>About</span>
                 </a>
             </li>
             
             <li>
                 <a id="search">
-                    <i class="iconfont icon-sousuo1"></i>
-                    <span>SEARCH</span>
+                    <span>Search</span>
                 </a>
             </li>
             
@@ -109,9 +109,24 @@
         <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
         </li> -->
         <li >
+            <span>12-24</span>
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/19/gulp-err.html">
+                        <span>
+                            hexo gulp 'minify-html' errored after x.xx s Error in plugin gulp-htmlmin
+                        </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        </li>
+        
+        <!-- <li class="listing-item">
+        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </li> -->
+        <li >
             <span>12-23</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/nodejs-hexo.html">
+            <a href="/19/nodejs-hexo.html">
                         <span>
                             Linux(manjaro/archlinux)下nodejs(npm) + hexo环境搭建
                         </span>
@@ -126,7 +141,7 @@
         <li >
             <span>12-23</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/null-is-not-a-string.html">
+            <a href="/19/null-is-not-a-string.html">
                         <span>
                             ValidationError: 'null' is not a string!
                         </span>
@@ -141,7 +156,7 @@
         <li >
             <span>12-23</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/template-render-error.html">
+            <a href="/19/template-render-error.html">
                         <span>
                             template-render-error
                         </span>
@@ -156,7 +171,7 @@
         <li >
             <span>12-02</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/worktime-attendance.html">
+            <a href="/19/worktime-attendance.html">
                         <span>
                             革新记之工作日程管理-考勤记录
                         </span>
@@ -171,7 +186,7 @@
         <li >
             <span>10-30</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/sllerr.html">
+            <a href="/19/sllerr.html">
                         <span>
                             LAKIA——SEC_ERROR_UNKNOWN_ISSUER + ssl.SSLCertVerificationError + urllib3.exceptions.MaxRetryError + requests.exceptions.SSLError
                         </span>
@@ -186,7 +201,7 @@
         <li >
             <span>10-29</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/worktime-design.html">
+            <a href="/19/worktime-design.html">
                         <span>
                             算法漫步-排班算法设计
                         </span>
@@ -201,7 +216,7 @@
         <li >
             <span>10-18</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/carboprost.html">
+            <a href="/19/carboprost.html">
                         <span>
                             药学漫步-一例卡前列素氨丁三醇不良反应(血氧下降)病例讨论
                         </span>
@@ -216,7 +231,7 @@
         <li >
             <span>10-07</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/kcl.html">
+            <a href="/19/kcl.html">
                         <span>
                             药学漫步-一例药源性低血钾的病例分析
                         </span>
@@ -231,7 +246,7 @@
         <li >
             <span>10-01</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/rifampicin.html">
+            <a href="/19/rifampicin.html">
                         <span>
                             药学漫步-一例利福平影响降血压疗效的病例分析
                         </span>
@@ -246,7 +261,7 @@
         <li >
             <span>09-02</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/third-equation.html">
+            <a href="/19/third-equation.html">
                         <span>
                             会计漫步-会计第三等式
                         </span>
@@ -261,7 +276,7 @@
         <li >
             <span>08-24</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/pswd.html">
+            <a href="/19/pswd.html">
                         <span>
                             密码生成器(js+html)
                         </span>
@@ -276,7 +291,22 @@
         <li >
             <span>08-23</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/jserr.html">
+            <a href="/19/getsearch.html">
+                        <span>
+                            JavaScript获取URL中的查询参数
+                        </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        </li>
+        
+        <!-- <li class="listing-item">
+        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </li> -->
+        <li >
+            <span>08-23</span>
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/19/jserr.html">
                         <span>
                             document.getElementById(&quot;_id&quot;) is null
                         </span>
@@ -291,7 +321,7 @@
         <li >
             <span>08-23</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/randstr.html">
+            <a href="/19/randstr.html">
                         <span>
                             随机字符串生成器(JavaScript实现)
                         </span>
@@ -306,7 +336,7 @@
         <li >
             <span>08-11</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/ershoufang.html">
+            <a href="/19/ershoufang.html">
                         <span>
                             LAKIA-赶集网和58同城二手房爬虫
                         </span>
@@ -321,7 +351,7 @@
         <li >
             <span>07-28</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/icalendar.html">
+            <a href="/19/icalendar.html">
                         <span>
                             iCalendar学习研究
                         </span>
@@ -336,7 +366,7 @@
         <li >
             <span>07-09</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/xxqg.html">
+            <a href="/19/xxqg.html">
                         <span>
                             神之强国
                         </span>
@@ -351,7 +381,7 @@
         <li >
             <span>06-26</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/inventory-quantity.html">
+            <a href="/19/inventory-quantity.html">
                         <span>
                             革新记之药品管理-库存数量表获取
                         </span>
@@ -366,7 +396,7 @@
         <li >
             <span>06-26</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/inventory-pre.html">
+            <a href="/19/inventory-pre.html">
                         <span>
                             革新记之药品管理-盘点准备表生成
                         </span>
@@ -381,7 +411,7 @@
         <li >
             <span>06-26</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/inventory-plan.html">
+            <a href="/19/inventory-plan.html">
                         <span>
                             革新记之药品管理-盘点方案改革
                         </span>
@@ -396,7 +426,7 @@
         <li >
             <span>06-18</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/sof.html">
+            <a href="/19/sof.html">
                         <span>
                             革新记之药品管理-根据子集列表操作父集列表
                         </span>
@@ -411,7 +441,7 @@
         <li >
             <span>06-17</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/fbs.html">
+            <a href="/19/fbs.html">
                         <span>
                             革新记之药品管理-按父串生成子串列表
                         </span>
@@ -436,7 +466,7 @@
         <li >
             <span>12-03</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2018/alchemist.html">
+            <a href="/18/alchemist.html">
                         <span>
                             炼金师的崛起
                         </span>
@@ -461,7 +491,7 @@
         <li >
             <span>09-06</span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2012/school-timetable.html">
+            <a href="/12/school-timetable.html">
                         <span>
                             用日历管理课程表
                         </span>

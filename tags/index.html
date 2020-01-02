@@ -25,43 +25,43 @@
 <div class="nav" id="nav">
     <div class="avatar-name">
         <div class="avatar ">
-            <img src="/" />
+            <img src="/src/avatar.jpg" />
         </div>
         <div class="name">
-            <i>Ande.Studio</i>
+            <i>CQH.CH</i>
         </div>
     </div>
     <div class="contents" id="nav-content">
         <ul>
             <li >
                 <a href="/">
-                    <i class="iconfont icon-shouye1"></i>
-                    <span>HOME</span>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li >
+                <a href="/categories">
+                    <span>Categories</span>
                 </a>
             </li>
             <li  class=active >
                 <a href="/tags">
-                    <i class="iconfont icon-biaoqian1"></i>
-                    <span>TAGS</span>
+                    <span>Tags</span>
                 </a>
             </li>
             <li >
                 <a href="/archives">
-                    <i class="iconfont icon-guidang2"></i>
-                    <span>ARCHIVES</span>
+                    <span>Archives</span>
                 </a>
             </li>
             <li >
                 <a href="/about/">
-                    <i class="iconfont icon-guanyu2"></i>
-                    <span>ABOUT</span>
+                    <span>About</span>
                 </a>
             </li>
             
             <li>
                 <a id="search">
-                    <i class="iconfont icon-sousuo1"></i>
-                    <span>SEARCH</span>
+                    <span>Search</span>
                 </a>
             </li>
             
@@ -92,31 +92,33 @@
         <!-- Main Content -->
         <div id='tag_cloud' class="tags">
     
-    <a href="#hexo" title="hexo" rel="3">hexo</a>
+    <a href="#hexo" title="hexo" rel="4">hexo</a>
     
     <a href="#debug" title="debug" rel="4">debug</a>
     
     <a href="#日历" title="日历" rel="2">日历</a>
     
-    <a href="#临床药学" title="临床药学" rel="3">临床药学</a>
-    
-    <a href="#药学服务" title="药学服务" rel="3">药学服务</a>
-    
-    <a href="#病例讨论" title="病例讨论" rel="1">病例讨论</a>
-    
     <a href="#量化" title="量化" rel="1">量化</a>
     
     <a href="#投资" title="投资" rel="1">投资</a>
     
-    <a href="#算法" title="算法" rel="4">算法</a>
+    <a href="#临床药学" title="临床药学" rel="3">临床药学</a>
+    
+    <a href="#病例讨论" title="病例讨论" rel="1">病例讨论</a>
     
     <a href="#爬虫" title="爬虫" rel="2">爬虫</a>
     
-    <a href="#革新" title="革新" rel="4">革新</a>
+    <a href="#药事" title="药事" rel="5">药事</a>
+    
+    <a href="#算法" title="算法" rel="4">算法</a>
+    
+    <a href="#javascript" title="javascript" rel="2">javascript</a>
+    
+    <a href="#gulp" title="gulp" rel="1">gulp</a>
     
     <a href="#rfc" title="rfc" rel="1">rfc</a>
     
-    <a href="#Office" title="Office" rel="1">Office</a>
+    <a href="#革新" title="革新" rel="4">革新</a>
     
     <a href="#病例分析" title="病例分析" rel="2">病例分析</a>
     
@@ -126,25 +128,17 @@
     
     <a href="#manjaro" title="manjaro" rel="1">manjaro</a>
     
-    <a href="#javascript" title="javascript" rel="1">javascript</a>
-    
-    <a href="#密码" title="密码" rel="1">密码</a>
-    
-    <a href="#生成器" title="生成器" rel="2">生成器</a>
+    <a href="#密码" title="密码" rel="2">密码</a>
     
     <a href="#clipboard.js" title="clipboard.js" rel="1">clipboard.js</a>
     
-    <a href="#随机" title="随机" rel="1">随机</a>
-    
-    <a href="#字符串" title="字符串" rel="1">字符串</a>
-    
-    <a href="#Python" title="Python" rel="1">Python</a>
+    <a href="#python" title="python" rel="2">python</a>
     
     <a href="#资产负债表" title="资产负债表" rel="1">资产负债表</a>
     
     <a href="#利润表" title="利润表" rel="1">利润表</a>
     
-    <a href="#办公" title="办公" rel="1">办公</a>
+    <a href="#办公" title="办公" rel="2">办公</a>
     
     <a href="#自动化" title="自动化" rel="3">自动化</a>
     
@@ -167,7 +161,21 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/nodejs-hexo.html">
+        <a href="/19/gulp-err.html">
+            <h2 class="post-title">
+                hexo gulp 'minify-html' errored after x.xx s Error in plugin gulp-htmlmin
+            </h2>
+            
+        </a>
+        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+    </div>
+    
+    <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+    <div class="post-preview">
+        <a href="/19/nodejs-hexo.html">
             <h2 class="post-title">
                 Linux(manjaro/archlinux)下nodejs(npm) + hexo环境搭建
             </h2>
@@ -181,7 +189,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/null-is-not-a-string.html">
+        <a href="/19/null-is-not-a-string.html">
             <h2 class="post-title">
                 ValidationError: 'null' is not a string!
             </h2>
@@ -195,7 +203,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/template-render-error.html">
+        <a href="/19/template-render-error.html">
             <h2 class="post-title">
                 template-render-error
             </h2>
@@ -216,7 +224,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/jserr.html">
+        <a href="/19/jserr.html">
             <h2 class="post-title">
                 document.getElementById(&quot;_id&quot;) is null
             </h2>
@@ -230,7 +238,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/null-is-not-a-string.html">
+        <a href="/19/null-is-not-a-string.html">
             <h2 class="post-title">
                 ValidationError: 'null' is not a string!
             </h2>
@@ -244,7 +252,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/sllerr.html">
+        <a href="/19/sllerr.html">
             <h2 class="post-title">
                 LAKIA——SEC_ERROR_UNKNOWN_ISSUER + ssl.SSLCertVerificationError + urllib3.exceptions.MaxRetryError + requests.exceptions.SSLError
             </h2>
@@ -258,7 +266,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/template-render-error.html">
+        <a href="/19/template-render-error.html">
             <h2 class="post-title">
                 template-render-error
             </h2>
@@ -279,7 +287,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2012/school-timetable.html">
+        <a href="/12/school-timetable.html">
             <h2 class="post-title">
                 用日历管理课程表
             </h2>
@@ -293,128 +301,9 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/icalendar.html">
+        <a href="/19/icalendar.html">
             <h2 class="post-title">
                 iCalendar学习研究
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-    </div>
-    
-</div>
-
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="临床药学">
-                    <span class="tag-text">临床药学</span>
-                </span>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2019/carboprost.html">
-            <h2 class="post-title">
-                药学漫步-一例卡前列素氨丁三醇不良反应(血氧下降)病例讨论
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-    </div>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2019/kcl.html">
-            <h2 class="post-title">
-                药学漫步-一例药源性低血钾的病例分析
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-    </div>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2019/rifampicin.html">
-            <h2 class="post-title">
-                药学漫步-一例利福平影响降血压疗效的病例分析
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-    </div>
-    
-</div>
-
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="药学服务">
-                    <span class="tag-text">药学服务</span>
-                </span>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2019/carboprost.html">
-            <h2 class="post-title">
-                药学漫步-一例卡前列素氨丁三醇不良反应(血氧下降)病例讨论
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-    </div>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2019/kcl.html">
-            <h2 class="post-title">
-                药学漫步-一例药源性低血钾的病例分析
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-    </div>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2019/rifampicin.html">
-            <h2 class="post-title">
-                药学漫步-一例利福平影响降血压疗效的病例分析
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-    </div>
-    
-</div>
-
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="病例讨论">
-                    <span class="tag-text">病例讨论</span>
-                </span>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2019/carboprost.html">
-            <h2 class="post-title">
-                药学漫步-一例卡前列素氨丁三醇不良反应(血氧下降)病例讨论
             </h2>
             
         </a>
@@ -433,7 +322,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2018/alchemist.html">
+        <a href="/18/alchemist.html">
             <h2 class="post-title">
                 炼金师的崛起
             </h2>
@@ -454,7 +343,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2018/alchemist.html">
+        <a href="/18/alchemist.html">
             <h2 class="post-title">
                 炼金师的崛起
             </h2>
@@ -466,8 +355,8 @@
 </div>
 
 <div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="算法">
-                    <span class="tag-text">算法</span>
+                <span class="fa fa-tag listing-seperator" id="临床药学">
+                    <span class="tag-text">临床药学</span>
                 </span>
     
     <!-- <li class="listing-item">
@@ -475,9 +364,9 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/fbs.html">
+        <a href="/19/carboprost.html">
             <h2 class="post-title">
-                革新记之药品管理-按父串生成子串列表
+                药学漫步-一例卡前列素氨丁三醇不良反应(血氧下降)病例讨论
             </h2>
             
         </a>
@@ -489,9 +378,9 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/inventory-pre.html">
+        <a href="/19/kcl.html">
             <h2 class="post-title">
-                革新记之药品管理-盘点准备表生成
+                药学漫步-一例药源性低血钾的病例分析
             </h2>
             
         </a>
@@ -503,23 +392,30 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/sof.html">
+        <a href="/19/rifampicin.html">
             <h2 class="post-title">
-                革新记之药品管理-根据子集列表操作父集列表
+                药学漫步-一例利福平影响降血压疗效的病例分析
             </h2>
             
         </a>
         <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
     </div>
     
+</div>
+
+<div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="病例讨论">
+                    <span class="tag-text">病例讨论</span>
+                </span>
+    
     <!-- <li class="listing-item">
     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/worktime-design.html">
+        <a href="/19/carboprost.html">
             <h2 class="post-title">
-                算法漫步-排班算法设计
+                药学漫步-一例卡前列素氨丁三醇不良反应(血氧下降)病例讨论
             </h2>
             
         </a>
@@ -538,7 +434,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/ershoufang.html">
+        <a href="/19/ershoufang.html">
             <h2 class="post-title">
                 LAKIA-赶集网和58同城二手房爬虫
             </h2>
@@ -552,7 +448,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/sllerr.html">
+        <a href="/19/sllerr.html">
             <h2 class="post-title">
                 LAKIA——SEC_ERROR_UNKNOWN_ISSUER + ssl.SSLCertVerificationError + urllib3.exceptions.MaxRetryError + requests.exceptions.SSLError
             </h2>
@@ -564,8 +460,8 @@
 </div>
 
 <div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="革新">
-                    <span class="tag-text">革新</span>
+                <span class="fa fa-tag listing-seperator" id="药事">
+                    <span class="tag-text">药事</span>
                 </span>
     
     <!-- <li class="listing-item">
@@ -573,7 +469,21 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/inventory-plan.html">
+        <a href="/19/fbs.html">
+            <h2 class="post-title">
+                革新记之药品管理-按父串生成子串列表
+            </h2>
+            
+        </a>
+        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+    </div>
+    
+    <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+    <div class="post-preview">
+        <a href="/19/inventory-plan.html">
             <h2 class="post-title">
                 革新记之药品管理-盘点方案改革
             </h2>
@@ -587,7 +497,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/inventory-pre.html">
+        <a href="/19/inventory-pre.html">
             <h2 class="post-title">
                 革新记之药品管理-盘点准备表生成
             </h2>
@@ -601,7 +511,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/inventory-quantity.html">
+        <a href="/19/inventory-quantity.html">
             <h2 class="post-title">
                 革新记之药品管理-库存数量表获取
             </h2>
@@ -615,9 +525,128 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/worktime-attendance.html">
+        <a href="/19/sof.html">
             <h2 class="post-title">
-                革新记之工作日程管理-考勤记录
+                革新记之药品管理-根据子集列表操作父集列表
+            </h2>
+            
+        </a>
+        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+    </div>
+    
+</div>
+
+<div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="算法">
+                    <span class="tag-text">算法</span>
+                </span>
+    
+    <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+    <div class="post-preview">
+        <a href="/19/fbs.html">
+            <h2 class="post-title">
+                革新记之药品管理-按父串生成子串列表
+            </h2>
+            
+        </a>
+        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+    </div>
+    
+    <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+    <div class="post-preview">
+        <a href="/19/inventory-pre.html">
+            <h2 class="post-title">
+                革新记之药品管理-盘点准备表生成
+            </h2>
+            
+        </a>
+        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+    </div>
+    
+    <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+    <div class="post-preview">
+        <a href="/19/sof.html">
+            <h2 class="post-title">
+                革新记之药品管理-根据子集列表操作父集列表
+            </h2>
+            
+        </a>
+        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+    </div>
+    
+    <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+    <div class="post-preview">
+        <a href="/19/worktime-design.html">
+            <h2 class="post-title">
+                算法漫步-排班算法设计
+            </h2>
+            
+        </a>
+        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+    </div>
+    
+</div>
+
+<div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="javascript">
+                    <span class="tag-text">javascript</span>
+                </span>
+    
+    <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+    <div class="post-preview">
+        <a href="/19/getsearch.html">
+            <h2 class="post-title">
+                JavaScript获取URL中的查询参数
+            </h2>
+            
+        </a>
+        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+    </div>
+    
+    <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+    <div class="post-preview">
+        <a href="/19/nodejs-hexo.html">
+            <h2 class="post-title">
+                Linux(manjaro/archlinux)下nodejs(npm) + hexo环境搭建
+            </h2>
+            
+        </a>
+        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+    </div>
+    
+</div>
+
+<div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="gulp">
+                    <span class="tag-text">gulp</span>
+                </span>
+    
+    <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+    <div class="post-preview">
+        <a href="/19/gulp-err.html">
+            <h2 class="post-title">
+                hexo gulp 'minify-html' errored after x.xx s Error in plugin gulp-htmlmin
             </h2>
             
         </a>
@@ -636,7 +665,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/icalendar.html">
+        <a href="/19/icalendar.html">
             <h2 class="post-title">
                 iCalendar学习研究
             </h2>
@@ -648,8 +677,8 @@
 </div>
 
 <div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="Office">
-                    <span class="tag-text">Office</span>
+                <span class="fa fa-tag listing-seperator" id="革新">
+                    <span class="tag-text">革新</span>
                 </span>
     
     <!-- <li class="listing-item">
@@ -657,9 +686,51 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/inventory-quantity.html">
+        <a href="/19/inventory-plan.html">
+            <h2 class="post-title">
+                革新记之药品管理-盘点方案改革
+            </h2>
+            
+        </a>
+        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+    </div>
+    
+    <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+    <div class="post-preview">
+        <a href="/19/inventory-pre.html">
+            <h2 class="post-title">
+                革新记之药品管理-盘点准备表生成
+            </h2>
+            
+        </a>
+        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+    </div>
+    
+    <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+    <div class="post-preview">
+        <a href="/19/inventory-quantity.html">
             <h2 class="post-title">
                 革新记之药品管理-库存数量表获取
+            </h2>
+            
+        </a>
+        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+    </div>
+    
+    <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+    <div class="post-preview">
+        <a href="/19/worktime-attendance.html">
+            <h2 class="post-title">
+                革新记之工作日程管理-考勤记录
             </h2>
             
         </a>
@@ -678,7 +749,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/kcl.html">
+        <a href="/19/kcl.html">
             <h2 class="post-title">
                 药学漫步-一例药源性低血钾的病例分析
             </h2>
@@ -692,7 +763,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/rifampicin.html">
+        <a href="/19/rifampicin.html">
             <h2 class="post-title">
                 药学漫步-一例利福平影响降血压疗效的病例分析
             </h2>
@@ -713,7 +784,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/nodejs-hexo.html">
+        <a href="/19/nodejs-hexo.html">
             <h2 class="post-title">
                 Linux(manjaro/archlinux)下nodejs(npm) + hexo环境搭建
             </h2>
@@ -734,7 +805,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/nodejs-hexo.html">
+        <a href="/19/nodejs-hexo.html">
             <h2 class="post-title">
                 Linux(manjaro/archlinux)下nodejs(npm) + hexo环境搭建
             </h2>
@@ -755,28 +826,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/nodejs-hexo.html">
-            <h2 class="post-title">
-                Linux(manjaro/archlinux)下nodejs(npm) + hexo环境搭建
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-    </div>
-    
-</div>
-
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="javascript">
-                    <span class="tag-text">javascript</span>
-                </span>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2019/nodejs-hexo.html">
+        <a href="/19/nodejs-hexo.html">
             <h2 class="post-title">
                 Linux(manjaro/archlinux)下nodejs(npm) + hexo环境搭建
             </h2>
@@ -797,28 +847,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/pswd.html">
-            <h2 class="post-title">
-                密码生成器(js+html)
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-    </div>
-    
-</div>
-
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="生成器">
-                    <span class="tag-text">生成器</span>
-                </span>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2019/pswd.html">
+        <a href="/19/pswd.html">
             <h2 class="post-title">
                 密码生成器(js+html)
             </h2>
@@ -832,7 +861,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/randstr.html">
+        <a href="/19/randstr.html">
             <h2 class="post-title">
                 随机字符串生成器(JavaScript实现)
             </h2>
@@ -853,7 +882,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/pswd.html">
+        <a href="/19/pswd.html">
             <h2 class="post-title">
                 密码生成器(js+html)
             </h2>
@@ -865,8 +894,8 @@
 </div>
 
 <div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="随机">
-                    <span class="tag-text">随机</span>
+                <span class="fa fa-tag listing-seperator" id="python">
+                    <span class="tag-text">python</span>
                 </span>
     
     <!-- <li class="listing-item">
@@ -874,51 +903,23 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/randstr.html">
-            <h2 class="post-title">
-                随机字符串生成器(JavaScript实现)
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-    </div>
-    
-</div>
-
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="字符串">
-                    <span class="tag-text">字符串</span>
-                </span>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2019/randstr.html">
-            <h2 class="post-title">
-                随机字符串生成器(JavaScript实现)
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-    </div>
-    
-</div>
-
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="Python">
-                    <span class="tag-text">Python</span>
-                </span>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2019/sllerr.html">
+        <a href="/19/sllerr.html">
             <h2 class="post-title">
                 LAKIA——SEC_ERROR_UNKNOWN_ISSUER + ssl.SSLCertVerificationError + urllib3.exceptions.MaxRetryError + requests.exceptions.SSLError
+            </h2>
+            
+        </a>
+        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+    </div>
+    
+    <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+    <div class="post-preview">
+        <a href="/19/sof.html">
+            <h2 class="post-title">
+                革新记之药品管理-根据子集列表操作父集列表
             </h2>
             
         </a>
@@ -937,7 +938,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/third-equation.html">
+        <a href="/19/third-equation.html">
             <h2 class="post-title">
                 会计漫步-会计第三等式
             </h2>
@@ -958,7 +959,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/third-equation.html">
+        <a href="/19/third-equation.html">
             <h2 class="post-title">
                 会计漫步-会计第三等式
             </h2>
@@ -979,9 +980,23 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/worktime-attendance.html">
+        <a href="/19/worktime-attendance.html">
             <h2 class="post-title">
                 革新记之工作日程管理-考勤记录
+            </h2>
+            
+        </a>
+        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+    </div>
+    
+    <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+    <div class="post-preview">
+        <a href="/19/worktime-design.html">
+            <h2 class="post-title">
+                算法漫步-排班算法设计
             </h2>
             
         </a>
@@ -1000,7 +1015,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/worktime-attendance.html">
+        <a href="/19/worktime-attendance.html">
             <h2 class="post-title">
                 革新记之工作日程管理-考勤记录
             </h2>
@@ -1014,9 +1029,9 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/xxqg.html">
+        <a href="/19/worktime-design.html">
             <h2 class="post-title">
-                神之强国
+                算法漫步-排班算法设计
             </h2>
             
         </a>
@@ -1028,9 +1043,9 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/worktime-design.html">
+        <a href="/19/xxqg.html">
             <h2 class="post-title">
-                算法漫步-排班算法设计
+                神之强国
             </h2>
             
         </a>
@@ -1049,7 +1064,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/xxqg.html">
+        <a href="/19/xxqg.html">
             <h2 class="post-title">
                 神之强国
             </h2>
@@ -1070,7 +1085,7 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
     <div class="post-preview">
-        <a href="/2019/xxqg.html">
+        <a href="/19/xxqg.html">
             <h2 class="post-title">
                 神之强国
             </h2>

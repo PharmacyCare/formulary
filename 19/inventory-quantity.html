@@ -1,0 +1,153 @@
+<!DOCTYPE html><html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="keywords" content="有序参照表,无序库存表,库存信息">
+	
+	
+	<meta name="description" content="有一份有序的参照表和一份无序的由系统导出的库存表，如何在参照表中得到库存信息？">
+	
+	<title> 革新记之药品管理-库存数量表获取 - CQH.CH</title>
+	<link rel="stylesheet" href="/css/zerone.css">
+<link rel="alternate" href="/atom.xml" title="CQH.CH" type="application/atom+xml">
+</head>
+
+<body>
+
+
+<div class="index-about">
+    <i> Capital of Quant and Hedge </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="/src/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>CQH.CH</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li >
+                <a href="/categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <span>About</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <span>Search</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> Capital of Quant and Hedge </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        <div class="post-container">
+    <div class="post-title">
+        革新记之药品管理-库存数量表获取
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2019-06-26 19:17:18</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#药事" title="药事">药事</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#革新" title="革新">革新</a>
+        <span>/</span>
+        
+        
+        </span>
+
+    </div>
+
+    <div class="post-content no-indent">
+        <h1><span id="ge-xin-ji-zhi-yao-pin-guan-li-ku-cun-shu-liang-biao-huo-qu">革新记之药品管理-库存数量表获取</span><a href="#ge-xin-ji-zhi-yao-pin-guan-li-ku-cun-shu-liang-biao-huo-qu" class="header-anchor"></a></h1><p>情景分析：</p>
+<p>有一份有序的参照表和一份无序的由系统导出的库存表，如何在参照表中得到库存信息？<br>sheet1 参照表<br><img src="std4.png" alt="sheet1 参照表" title="sheet1 参照表"></p>
+<p>sheet2 库存表<br><img src="smp4.png" alt="sheet2 库存表" title="sheet2 库存表"></p>
+<p>功能实现：</p>
+<p>如果两份列表长度一样的话，那么只要按同一种排序方式就可以。但如果长度不一样的话，就得花一番心思。下面给出一种使用办公软件实现的方法。</p>
+<p>假设sheet1 C列和sheet2 G列的品名一致且唯一，sheet2 K列即我们需要的库存信息。那么在sheet1的空白列（如H列）填充公式“=SUMIF($sheet2.G:G,C2,$sheet2.K:K)”即可得到全表库存信息。<br><img src="rst4-2.png" alt="全表库存信息" title="全表库存信息"></p>
+<p>而区域的库存信息可通过sheet2 F列设置过滤标签得到。</p>
+<p><img src="rst4-3.png" alt="区域库存信息" title="区域的库存信息"><br>库存变动的话，更新sheet2 库存表即可。</p>
+
+        
+        <br />
+    </div>
+</div>
+
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2020 <a href="http://cqh.ch/" target="_blank" rel="noopener">CQH</a></p>
+</footer>
+
+
+
+
+</body></html>
+
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.xml"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+
+<script src="/js/index.js"></script>
+<script src="/js/baidu.js"></script>
+<script src="/js/jquery.min.js"></script>
