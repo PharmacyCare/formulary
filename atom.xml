@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://log.cqh.ch/"/>
-  <updated>2020-03-08T12:05:38.443Z</updated>
+  <updated>2020-03-08T12:12:31.373Z</updated>
   <id>http://log.cqh.ch/</id>
   
   <author>
@@ -17,21 +17,17 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>数据分析-基金研究</title>
-    <link href="http://log.cqh.ch/20/found2.html"/>
-    <id>http://log.cqh.ch/20/found2.html</id>
-    <published>2020-02-11T16:00:00.000Z</published>
-    <updated>2020-03-08T12:05:38.443Z</updated>
+    <title>数据分析-货币基金研究</title>
+    <link href="http://log.cqh.ch/20/found.html"/>
+    <id>http://log.cqh.ch/20/found.html</id>
+    <published>2020-03-07T16:00:00.000Z</published>
+    <updated>2020-03-08T12:12:31.373Z</updated>
     
-    <content type="html"><![CDATA[<h2><span id="qian-yan">前言</span><a href="#qian-yan" class="header-anchor"></a></h2><p>在用生长曲线练完手之后，我觉得自己终于可以尝试开始写自己的价值分析系统了，</p><h2><span id="shu-ju">数据</span><a href="#shu-ju" class="header-anchor"></a></h2><p>打算用余额宝的货币基金做数据源，现在余额宝有多支基金可供选择，我选择”天弘余额宝货币000198”，因其历史最久远，名声最响亮。在分析了几个网站之后，还是觉得”天天基金网”</p><p><a href="http://fund.eastmoney.com/000198.html" target="_blank" rel="noopener">http://fund.eastmoney.com/000198.html</a></p>]]></content>
+    <content type="html"><![CDATA[<p>在大学的时候，我曾好奇过货币基金的七日年化收益率是如何求得的？于是我去查了百度百科，得到如下解答：</p><p><a href="https://baike.baidu.com/history/%E4%B8%83%E6%97%A5%E5%B9%B4%E5%8C%96%E6%94%B6%E7%9B%8A%E7%8E%87/805334/67847238" target="_blank" rel="noopener">七日年化收益率(2014-11-07百度百科历史版本)</a>。<br><img src="qrnhsyl.png" alt="七日年化收益率" title="七日年化收益率"><br>单利计算公式为：（∑Ri/7）×365/10000份×100%，复利计算公式为：（∑Ri/10000份）365/7×100%。<br>很遗憾，这个算法是有问题的，根据其算出的收益率和实际公布的是不一致的，由此给我遗留了一个未决的问题，也启发了我<strong>百度不可尽信。</strong></p><p>直到前几天，我点开了一个<a href="https://www.bilibili.com/video/av87824738" target="_blank" rel="noopener">均值不等式链的几何证明</a>视频，我惊叹这个证明的巧妙的同时也回想起了这个问题，原来解决“七日年化收益率”知识在高中就已经具备了。单利可用算术平均，复利则用几何平均。<br>很庆幸的是，目前的百度百科词条似乎已经更正了该错误：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">货币市场基金存在两种收益结转方式：</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">一是“月月分红，按月结转”，二是“日日分红，按日结转”，</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">不管是按日结转还是按月结转，都相当于复利。</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">复利计算公式为：&#123;[π（1+Ri&#x2F;10000）]^（365&#x2F;7）-1&#125;×100% π表示连乘 i&#x3D;1。。。7</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">其中，Ri为最近第i公历日（i&#x3D;1,2…..7）的每万份收益</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">基金七日年收益率采取四舍五入方式保留小数点后三位。</span></pre></td></tr></table></figure><p>但真的没有问题吗？按日结转可以直接套用复利公式是没有疑问的，但按月甚或更长期间结转显然是不能套用的，因为在结转日之前收益并不会结转为本金的一部分，在未结转期间实际上相当于单利的。<br>那么在实际中按月结转的货币基金是如何计算年化收益率的呢？空说无凭，以下是根据<a href="http://fund.eastmoney.com/000829.html" target="_blank" rel="noopener">易方达天天发货币A 000829(结转日为每月15日)</a>的2020年1月的数据演算。<br><img src="yfd202001.png" alt="2020年1月易方达天天发货币A000829演算" title="2020年1月易方达天天发货币A000829演算"><br>上图中，C/E/H列分别为基金公司公布的七日年化收益率、根据每万份收益推算的算术平均年化收益率、根据每万份收益推算的几何平均年化收益率。从数据中可以得出，易方达公布的是按每日复利计算的几何平均数。而在前面我的结论是，按月结转显然是不能直接套用的复利公式的，那么是我错了吗？鲁鲁修那句名言是怎么说的来着？<br><img src="fault.jpg" alt="错的不是我，是这个世界" title="错的不是我，是这个世界"><br>根据均值不等式，可以知道几何平均≤算术平均，D列会大于G列（差异很小，取四位有效数字时基本看不出差别，到第六位后才会出现差异）。但是反过来却不成立，相反E列似乎总是小于H列（这种关系该如何用数学证明呢？）。所以易方达的数据实际上把年化收益率算大了。<br>由此我得出的结论是，<strong>不能盲目相信别人给出的东西，需要数据支持的话，得学会自己分析处理</strong>。</p><p>习总告诫我们：<strong>不忘初心，牢记使命</strong>。当初我之所以想知道年化收益率的算法是因为在玩余额宝的时候，看到类似以下的趋势图：<br>余额宝1月收益走势<br><img src="yeb1m.png" alt="余额宝1月收益走势" title="余额宝1月收益走势"><br>余额宝成立以来收益走势<br><img src="yebmax.png" alt="余额宝成立以来收益走势" title="余额宝成立以来收益走势"><br>在这两张图中，每万分收益和七日年化收益率，从起初一点也不相似的趋势，随着时间的增加会变得越来越像，它们之间有何关联？当初的我确实无法解答这个问题，但现在我觉得终于有能力了。</p><p>还是以2020年1月易方达天天发货币A000829的数据演算<br><img src="yfd202001b.png" alt="2020年1月易方达天天发货币A000829演算2" title="2020年1月易方达天天发货币A000829演算2"><br>如果我们给每万分收益（灰线）添加一条7日移动平均趋势线（绿线），会发现绿线和红线基本重合（为什么说基本呢，因为据我所知办公表格的移动平均实际是采用算术平均算法，而根据公理及演算表可知，算术平均实际是大于几何平均的）。而移动平均线（红线或绿线）和七日年化收益率（蓝线）走势很相似。</p><p>知道这个有什么用呢？根据年化收益率单利公式，我们很容易就知道哦，年化收益率就是将某个每万分收益缩放0.0365倍，换句话说将每万分收益的坐标轴y1缩放0.0365倍就可以得到年化收益率的坐标轴y2，这样我们就可以在一个绘图中只用每万分收益及其移动平均线就解算出所需的信息来。进一步的，通过自动义移动均线的算法及参数，可以定制快线和慢线。更进一步的，如果将基金按资产配置份额分解再演算，那么股票市场的那一套分析方法将能应用到基金市场。到了这一步，我感觉自己的知识储备不够用了。<strong>才华支撑不起野心，还是应该多读些书…</strong></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h2&gt;&lt;span id=&quot;qian-yan&quot;&gt;前言&lt;/span&gt;&lt;a href=&quot;#qian-yan&quot; class=&quot;header-anchor&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;在用生长曲线练完手之后，我觉得自己终于可以尝试开始写自己的价值分析系统了，&lt;/p&gt;
-&lt;h2&gt;&lt;span i
-      
+      货币基金的七日年化收益率是如何求得的？单利可用算术平均，复利则用几何平均。不能盲目相信别人给出的东西，需要数据支持的话，得学会自己分析处理
     
     </summary>
     
@@ -39,16 +35,16 @@
       <category term="数据分析" scheme="http://log.cqh.ch/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
     
     
-      <category term="echartsjs" scheme="http://log.cqh.ch/tags/echartsjs/"/>
+      <category term="基金" scheme="http://log.cqh.ch/tags/%E5%9F%BA%E9%87%91/"/>
     
   </entry>
   
   <entry>
-    <title>数据分析——生长曲线设想与应用</title>
+    <title>数据分析-生长曲线设想与应用</title>
     <link href="http://log.cqh.ch/20/growth-curve.html"/>
     <id>http://log.cqh.ch/20/growth-curve.html</id>
     <published>2020-02-10T16:00:00.000Z</published>
-    <updated>2020-02-11T09:20:13.754Z</updated>
+    <updated>2020-03-08T12:09:51.733Z</updated>
     
     <content type="html"><![CDATA[<h2><span id="yuan-qi">原起</span><a href="#yuan-qi" class="header-anchor"></a></h2><ul><li>临床实践中，一般用体重换算药物剂量。在审方的过程中，经常需要参考体重数据。</li><li>在学习《儿科学》的过程中，我了解到生长曲线在体格评价的作用。</li><li>既然我们是儿童医院，一方面有临床的需要，另一方面负责保健的工作，那么不开发一个生长曲线的工具呢？</li><li>在临床药学的培训时，我想到可以开发一个用生长曲线自动计算药物剂量的工具。如果处方系统能调用这一工具，那对合理用药将有极大的助益。</li><li>眼下正在做的处方集，当然也可以调用这一工具。</li><li>暂不考虑太久远的事情，如何实现数据的可视化才是当下要解决的问题。</li><li>涉及移植和集成，不打算使用办公软件。用Python当然最快速，但要医生普及Python还是不现实。</li><li>最终决定用JavaScript，使用echartsjs。选择echartsjs其实很简单，因其文档是中文学习成本低，且案例丰富。</li><li>为了”合理用药”去学JavaScript数据可视化？当然太虚无缥缈。</li><li>但一想到金融数据的可视化能够带来的真金白银，瞬间就有动力了。</li></ul><h2><span id="shu-ju">数据</span><a href="#shu-ju" class="header-anchor"></a></h2><p>要找一份直接可用的数据并不容易，最后我选择了最笨的办法——自己动手。当然我不会傻到一个一个的手敲，而是找了4张图片做光学识别。所幸辨认度高，适当修正就得到了。<br>我得到的数据有两个问题：一是无法确保数据来源真实可靠，二是只包含了0到6岁的数据。拿来练手是没有问题，但如果用来指导临床还是得解决前面的问题才是。</p><p>男婴幼儿体重表<br><img src="gc-bw.jpg" alt="男婴幼儿体重表" title="男婴幼儿体重表"></p><p>男婴幼儿身高表<br><img src="gc-bh.jpg" alt="男婴幼儿身高表" title="女婴幼儿身高表"></p><p>女婴幼儿体重表<br><img src="gc-gw.jpg" alt="女婴幼儿体重表" title="女婴幼儿体重表"></p><p>女婴幼儿身高表<br><img src="gc-gh.jpg" alt="女婴幼儿身高表" title="女婴幼儿身高表"></p><h2><span id="ke-shi-hua">可视化</span><a href="#ke-shi-hua" class="header-anchor"></a></h2><p>其实就是看文档，修改示例，Debug的循环。我并不熟悉JavaScript，磕磕碰碰，其中艰辛，外人可能无法体会。但当我终于调试出了我想要的东西，那是一种付出和收获的坦然。我知道我基本上学会了如何用JavaScript的数据可视化。</p><p>男婴幼儿生长曲线<br><img src="gc-boy.png" alt="男婴幼儿生长曲线" title="男婴幼儿生长曲线"></p><p>女婴幼儿生长曲线<br><img src="gc-girl.png" alt="女婴幼儿生长曲线" title="女婴幼儿生长曲线"></p><h2><span id="yi-bao-jian-wei-zhong-xin">以保健为中心</span><a href="#yi-bao-jian-wei-zhong-xin" class="header-anchor"></a></h2><p>我想起了医院“以保健为中心”的服务方针，我觉得这是妇保院该有的定位。因为在临床方面，妇保院无法和人民医院或中医院竞争。我曾参与过幼儿园的体检，负责的就是身高和体重的测量。现在想来，如果在报告上评估身体质量指数 (BMI)，并绘制生长曲线，那么这项工作会更有意义。不仅仅是幼儿体检，其实可以往前追溯到产检，用生长曲线评估孕程。这样就能打通妇女和儿童保健，从而实现连续性。更进一步的，不仅仅是身高和体重，其他数据也可以考虑可视化。这样下来妇保院将会在保健工作中脱颖而出。</p><h2><span id="shu-ju-gong-xiang">数据共享</span><a href="#shu-ju-gong-xiang" class="header-anchor"></a></h2><p>在卫生院，我参与过公共卫生的考核工作。健康扶贫出发很美好，但落到实处感觉并不美妙。很多工作流于形式，其中让我感触最深的还是健康档案，一方面数据真实性堪忧，另一方面数据并没有得到有效的利用。这让我想到了数据共享的问题：如何让原始数据方便快捷的传入公卫系统，如何让人获得清晰明了的数据视图。当前采用的先建纸档，再由纸档录电子档，这当然是低效的做法。数据应该在一手的时候就直接传入系统，也就是说很多测量仪器应该开发数据接口。试想一下，身高、体重、血压、血糖……可以直接传到计算机，这可以舍下多少录入的工作和纸张。</p><h2><span id="yao-xue-gong-ju">药学工具</span><a href="#yao-xue-gong-ju" class="header-anchor"></a></h2><p>我可能无法实现上面的设想，但最起码的我可以在我的本职工作中进行尝试。我希望实现一个可以根据体重或年龄算出药物用量的应用，实际上，如果有数据支撑，这是可以办到的。下面是一种简单实现：</p><p>在《实用儿科药物剂量速查手册  第5版》关于氨茶碱的用法用量：<br><img src="acj.png" alt="氨茶碱的用法用量" title="氨茶碱的用法用量"></p><p>从上可以看出用量跟体重成线性关系，为简便计取y=3x，将这条线和生长曲线相关后得到如下视图：<br><img src="gc-acj.png" alt="氨茶碱用量" title="氨茶碱用量"></p><p>在临床中，如果只有年龄信息(大多数门诊患者是这种情况)，那么可以生长曲线得到体重的数据，而得出参考药物用量。而如果能得到确切的体重数据(住院患者)，那么可以直接用体重计算出药物用量。</p><p>生成用量参考图表只是比较初级的玩法。如果可以将这种工具整合进处方系统，那么医生那里可以根据参考开具处方。而如果审方系统集成了这种工具，药师就能将剂量偏低和偏高的处方筛选出来，做进一步审核。</p>]]></content>
     
