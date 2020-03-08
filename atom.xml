@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://log.cqh.ch/"/>
-  <updated>2020-02-11T09:20:13.754Z</updated>
+  <updated>2020-03-08T12:05:38.443Z</updated>
   <id>http://log.cqh.ch/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数据分析-基金研究</title>
+    <link href="http://log.cqh.ch/20/found2.html"/>
+    <id>http://log.cqh.ch/20/found2.html</id>
+    <published>2020-02-11T16:00:00.000Z</published>
+    <updated>2020-03-08T12:05:38.443Z</updated>
+    
+    <content type="html"><![CDATA[<h2><span id="qian-yan">前言</span><a href="#qian-yan" class="header-anchor"></a></h2><p>在用生长曲线练完手之后，我觉得自己终于可以尝试开始写自己的价值分析系统了，</p><h2><span id="shu-ju">数据</span><a href="#shu-ju" class="header-anchor"></a></h2><p>打算用余额宝的货币基金做数据源，现在余额宝有多支基金可供选择，我选择”天弘余额宝货币000198”，因其历史最久远，名声最响亮。在分析了几个网站之后，还是觉得”天天基金网”</p><p><a href="http://fund.eastmoney.com/000198.html" target="_blank" rel="noopener">http://fund.eastmoney.com/000198.html</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2&gt;&lt;span id=&quot;qian-yan&quot;&gt;前言&lt;/span&gt;&lt;a href=&quot;#qian-yan&quot; class=&quot;header-anchor&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;在用生长曲线练完手之后，我觉得自己终于可以尝试开始写自己的价值分析系统了，&lt;/p&gt;
+&lt;h2&gt;&lt;span i
+      
+    
+    </summary>
+    
+    
+      <category term="数据分析" scheme="http://log.cqh.ch/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+    
+      <category term="echartsjs" scheme="http://log.cqh.ch/tags/echartsjs/"/>
+    
+  </entry>
   
   <entry>
     <title>数据分析——生长曲线设想与应用</title>
@@ -486,31 +513,6 @@
     
     
       <category term="爬虫" scheme="http://log.cqh.ch/tags/%E7%88%AC%E8%99%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>iCalendar学习研究</title>
-    <link href="http://log.cqh.ch/19/icalendar.html"/>
-    <id>http://log.cqh.ch/19/icalendar.html</id>
-    <published>2019-07-28T10:38:50.000Z</published>
-    <updated>2020-01-01T11:09:39.161Z</updated>
-    
-    <content type="html"><![CDATA[<p>iCalendar是由<a href="https://tools.ietf.org/html/rfc5545" target="_blank" rel="noopener">RFC5545</a>定义的一种日历日程文件规范，扩展名名为ics，下面是对一份导出日历备注学习</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">BEGIN:VCALENDAR</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">PRODID:-&#x2F;&#x2F;ACal&#x2F;&#x2F;Ande.Studio</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">VERSION:2.0</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">METHOD:PUBLISH</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">CALSCALE:GREGORIAN</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">X-WR-TIMEZONE:Asia&#x2F;Shanghai</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">BEGIN:VEVENT</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">DTSTAMP:20190701T000000Z</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">UID:1@wt201907</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">SUMMARY:日历事件一</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">DTSTART:20190701T080000</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">DTEND:20190701T120000</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">BEGIN:VALARM</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">TRIGGER:-PT10M</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">ACTION:DISPLAY</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">END:VALARM</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">END:VEVENT</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">BEGIN:VEVENT</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">DTSTAMP:20190701T000000Z</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">UID:2@wt201907</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">SUMMARY:日历事件二</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">DTSTART;VALUE&#x3D;DATE:20190715</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">DTEND;VALUE&#x3D;DATE:20190716</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">END:VEVENT</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">END:VCALENDAR</span></pre></td></tr></table></figure><p>日历总体被包含在VCALENDAR标签对之中。开头指定一些基本信息中值得注意的是X-WR-TIMEZONE用来指定时区，加上这条标记可以避免后面时间逐个指定时区，减少冗余。</p><p>VEVENT定义事件，DTSTAMP是事件创建时间。UID是事件识别码，必须唯一。SUMMARY是事件的描述。DTSTART与DTEND分别是事件的开始与结束时间，若只为日期，应加;VALUE=DATE限定。</p><p>VALARM定义提醒，其必须镶嵌在VEVENT之中，一个事件可以有多个VALARM（某些应用可能不支持）。TRIGGER为触发提醒的时点，默认是与DTSTART关联的，-PT10M意为开始前10分钟，-号为必需。不带-号并不会被当然地理解为开始后的时点。也可以将触发与结束时间相关联，此时应加;RELATED=END限定（某些应用可能不支持）。ACTION为提醒的动作。</p>]]></content>
-    
-    <summary type="html">
-    
-      iCalendar(ics) RFC5545日历日程文件规范学习研究
-    
-    </summary>
-    
-    
-      <category term="日历" scheme="http://log.cqh.ch/categories/%E6%97%A5%E5%8E%86/"/>
-    
-    
-      <category term="日历" scheme="http://log.cqh.ch/tags/%E6%97%A5%E5%8E%86/"/>
-    
-      <category term="rfc" scheme="http://log.cqh.ch/tags/rfc/"/>
     
   </entry>
   

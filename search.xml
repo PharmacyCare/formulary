@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>数据分析-基金研究</title>
+      <link href="/20/found2.html"/>
+      <url>/20/found2.html</url>
+      
+        <content type="html"><![CDATA[<h2><span id="qian-yan">前言</span><a href="#qian-yan" class="header-anchor"></a></h2><p>在用生长曲线练完手之后，我觉得自己终于可以尝试开始写自己的价值分析系统了，</p><h2><span id="shu-ju">数据</span><a href="#shu-ju" class="header-anchor"></a></h2><p>打算用余额宝的货币基金做数据源，现在余额宝有多支基金可供选择，我选择”天弘余额宝货币000198”，因其历史最久远，名声最响亮。在分析了几个网站之后，还是觉得”天天基金网”</p><p><a href="http://fund.eastmoney.com/000198.html" target="_blank" rel="noopener">http://fund.eastmoney.com/000198.html</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据分析 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> echartsjs </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>数据分析——生长曲线设想与应用</title>
       <link href="/20/growth-curve.html"/>
       <url>/20/growth-curve.html</url>
