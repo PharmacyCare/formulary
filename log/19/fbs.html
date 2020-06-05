@@ -1,118 +1,588 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html>
+<html lang=cn>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<meta name="keywords" content="参照表,父串,样表,子串">
-	
-	
-	<meta name="description" content="样表为参照表的子集，其条目大部分是参照表的子串，少些则不是，如何将这份样表按参照表的条目重新生成？">
-	
-	<title> 革新记之药品管理-按父串生成子串列表 - CQH.CH</title>
-	<link rel="stylesheet" href="/css/zerone.css">
-<link rel="alternate" href="/atom.xml" title="CQH.CH" type="application/atom+xml">
+    <meta charset="utf-8">
+    
+    <title>革新记之药品管理-按父串生成子串列表 | PharmacyCare</title>
+    
+    
+        <meta name="keywords" content="参照表,父串,样表,子串" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="样表为参照表的子集，其条目大部分是参照表的子串，少些则不是，如何将这份样表按参照表的条目重新生成？">
+<meta name="keywords" content="参照表,父串,样表,子串">
+<meta property="og:type" content="website">
+<meta property="og:title" content="革新记之药品管理-按父串生成子串列表">
+<meta property="og:url" content="http:&#x2F;&#x2F;log.cqh.ch&#x2F;log&#x2F;19&#x2F;fbs.html">
+<meta property="og:site_name" content="PharmacyCare">
+<meta property="og:description" content="样表为参照表的子集，其条目大部分是参照表的子串，少些则不是，如何将这份样表按参照表的条目重新生成？">
+<meta property="og:locale" content="cn">
+<meta property="og:image" content="http:&#x2F;&#x2F;log.cqh.ch&#x2F;log&#x2F;19&#x2F;std.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;log.cqh.ch&#x2F;log&#x2F;19&#x2F;smp.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;log.cqh.ch&#x2F;log&#x2F;19&#x2F;rst.png">
+<meta property="og:updated_time" content="2020-01-02T02:22:16.962Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;log.cqh.ch&#x2F;log&#x2F;19&#x2F;std.png">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="PharmacyCare" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/favicon.ico" />
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
+
+
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
 </head>
 
 <body>
-
-
-<div class="index-about">
-    <i> Capital of Quant and Hedge </i>
-</div>
-
-<div class="index-container">
-    
-    <div class="index-left">
-        
-<div class="nav" id="nav">
-    <div class="avatar-name">
-        <div class="avatar ">
-            <img src="/src/avatar.jpg" />
-        </div>
-        <div class="name">
-            <i>CQH.CH</i>
-        </div>
-    </div>
-    <div class="contents" id="nav-content">
-        <ul>
-            <li >
-                <a href="/">
-                    <span>Home</span>
-                </a>
-            </li>
-            <li >
-                <a href="/categories">
-                    <span>Categories</span>
-                </a>
-            </li>
-            <li >
-                <a href="/tags">
-                    <span>Tags</span>
-                </a>
-            </li>
-            <li >
-                <a href="/archives">
-                    <span>Archives</span>
-                </a>
-            </li>
-            <li >
-                <a href="/about/">
-                    <span>About</span>
-                </a>
-            </li>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">PharmacyCare</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">归档</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/tags">标签</a>
+                
+                    <a class="main-nav-link" href="/about">关于</a>
+                
+            </nav>
             
-            <li>
-                <a id="search">
-                    <span>Search</span>
-                </a>
-            </li>
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">标签</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
             
-        </ul>
-    </div>
-</div>
-
-
-<div class="search-field" id="search-field">
-    <div class="search-container">
-        <div class="search-input">
-            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
-            <input id="search-input"/>
-            <span id="begin-search">search</span>
-        </div>
-        <div class="search-result-container" id="search-result-container">
-
-        </div>
-    </div>
-</div>
-
-        <div class="index-about-mobile">
-            <i> Capital of Quant and Hedge </i>
-        </div>
-    </div>
-    
-    <div class="index-middle">
-        <!-- Main Content -->
+            
+                <aside id="sidebar">
+   
         
+    <div class="widget-wrap" id='categories'>
+        <h3 class="widget-title">
+            <span>categories</span>
+            &nbsp;
+            <a id='allExpand' href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01. 抗微生物药
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/01.html">第一章 抗微生物药</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02. 抗寄生虫病药
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/02.html">第二章 抗寄生虫病药</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03. 麻醉药
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/03.html">第三章 麻醉药</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04. 镇痛、解热、抗炎、抗风湿、抗痛风药
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/04.html">第四章  镇痛、解热、抗炎、抗风湿、抗痛风药</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05. 神经系统用药
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/05.html">第五章  神经系统用药</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06.  治疗精神障碍药
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/06.html">第六章  治疗精神障碍药</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            07. 心血管系统用药
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/07.html">第七章  心血管系统用药</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            08.  呼吸系统用药
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/08.html">第八章  呼吸系统用药</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            09. 消化系统用药
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/09.html">第九章  消化系统用药</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            10. 泌尿系统用药
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/10.html">第十章  泌尿系统用药</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            11.  血液系统用药
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/11.html">第十一章  血液系统用药</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            12.  激素及影响内分泌药
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/12.html">第十二章  激素及影响内分泌药</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            13. 抗变态反应药
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/13.html">第十三章  抗变态反应药</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            14.  免疫系统用药
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/14.html">第十四章  免疫系统用药</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            15.  抗肿瘤药
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/15.html">第十五章  抗肿瘤药</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            16.  维生素、矿物质类药
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/16.html">第十六章  维生素、矿物质类药</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            17.调节水、电解质及酸碱平衡药
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/17.html">第十七章 调节水、电解质及酸碱平衡药</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            18. 解毒药
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/18.html">第十八章 解毒药</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            19. 生物制品
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/19.html">第十九章 生物制品</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            21. 皮肤科用药
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/21.html">第二十一章 皮肤科用药</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            22.  眼科用药
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/22.html">第二十二章  眼科用药</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            23.骨科用药
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/23.html">第二十三章  骨科用药</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            24. 妇产科用药
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/24.html">第二十四章  妇产科用药</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            51. 中成药儿科
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/51.html">第五十一章 中成药儿科</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            52. 中成药妇科
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/52.html">第五十二章 中成药妇科</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            53. 中成药其他
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/53.html">第五十三章 中成药其他</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            form3
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/form3/formulary.html"></a></li>  </ul> 
+                    </li> 
+                     </ul> 
     </div>
-</div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
 
-<footer class="footer">
-    <p>&copy; 2020 <a href="http://cqh.ch/" target="_blank" rel="noopener">CQH</a></p>
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+            <section id="main"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            革新记之药品管理-按父串生成子串列表
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+        
+        
+            <h1><span id="ge-xin-ji-zhi-yao-pin-guan-li-an-fu-chuan-sheng-cheng-zi-chuan-lie-biao">革新记之药品管理-按父串生成子串列表</span><a href="#ge-xin-ji-zhi-yao-pin-guan-li-an-fu-chuan-sheng-cheng-zi-chuan-lie-biao" class="header-anchor"></a></h1><p>情景分析：<br>样表为参照表的子集，其条目大部分是参照表的子串，少些则不是，如何将这份样表按参照表的条目重新生成？<br>参照表：<br><img src="std.png" alt="参照表" title="参照表"></p>
+<p>样表：<br><img src="smp.png" alt="样表" title="样表"></p>
+<p>算法分析：<br>1.遍历样表条目，与参照表比对，若为子串则按参照表条目输出，不为子串者原样输出并加提示。<br>2.对加提示的条目手工修改。</p>
+<p>代码演示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">#fbs.py fatherStrBirthSonStr</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">#ande.stduio (c) 2019-06-17 21:50:08</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">import numpy as np</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">std  &#x3D; np.loadtxt(&quot;0.csv&quot;, delimiter&#x3D;&quot;,&quot;, usecols&#x3D;(1), dtype&#x3D;str, skiprows&#x3D;1, unpack&#x3D;True, encoding&#x3D;&#39;utf8&#39;)#参照表</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">smp  &#x3D; np.loadtxt(&quot;4.csv&quot;, delimiter&#x3D;&quot;,&quot;, usecols&#x3D;(0), dtype&#x3D;str, skiprows&#x3D;1, unpack&#x3D;True, encoding&#x3D;&#39;utf8&#39;)#样表</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">for i in range(len(smp)):</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">	print(smp[i], end&#x3D;&quot;\t&quot;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">	for j in range(len(std)):</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">		if std[j].find(smp[i]) !&#x3D; -1:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">			print(std[j], end&#x3D;&quot;&quot;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">		#else:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">			#print(&#39;0\t&#39; + smp[i])#此流程不可行，因第二遍历多数将进入此条件，取巧的办法是在第一遍历时就执行此流程，然后根据第二遍历真条件反筛选出假条件</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">	print()</span></pre></td></tr></table></figure>
+<p>运行结果：</p>
+<p><img src="rst.png" alt="运行结果" title="运行结果"></p>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+    
+
+
+
+
+    
+    
+
+
+
+
+<!-- baidu url auto push script -->
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>     
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            上犹县妇幼保健院 &copy
+        </div>
+    </div>
 </footer>
 
+        
 
-
-
-</body></html>
-
-
-<script>
-    // We expose some of the variables needed by the front end
-    window.hexo_search_path = "search.xml"
-    window.hexo_root = "/"
-    window.isPost = false
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true,
+            TeX: {
+                equationNumbers: {
+                  autoNumber: 'AMS'
+                }
+            }
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
 </script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
-<script src="/js/index.js"></script>
-<script src="/js/baidu.js"></script>
-<script src="/js/jquery.min.js"></script>
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
