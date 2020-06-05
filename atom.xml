@@ -3,11 +3,11 @@
   <title>PharmacyCare</title>
   
   <subtitle>PharmacyCare-formulary</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="/formulary/atom.xml" rel="self"/>
   
-  <link href="http://log.cqh.ch/"/>
+  <link href="http://pharmacycare.github.io/"/>
   <updated>2020-06-05T14:44:41.424Z</updated>
-  <id>http://log.cqh.ch/</id>
+  <id>http://pharmacycare.github.io/</id>
   
   <author>
     <name>PharmCare</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>第二十三章  骨科用药</title>
-    <link href="http://log.cqh.ch/23.html"/>
-    <id>http://log.cqh.ch/23.html</id>
+    <link href="http://pharmacycare.github.io/23.html"/>
+    <id>http://pharmacycare.github.io/23.html</id>
     <published>2020-06-05T14:35:52.314Z</published>
     <updated>2020-06-05T14:44:41.424Z</updated>
     
@@ -41,15 +41,15 @@
     </summary>
     
     
-      <category term="23.骨科用药" scheme="http://log.cqh.ch/categories/23-%E9%AA%A8%E7%A7%91%E7%94%A8%E8%8D%AF/"/>
+      <category term="23.骨科用药" scheme="http://pharmacycare.github.io/categories/23-%E9%AA%A8%E7%A7%91%E7%94%A8%E8%8D%AF/"/>
     
     
   </entry>
   
   <entry>
     <title>第五十二章 中成药妇科</title>
-    <link href="http://log.cqh.ch/52.html"/>
-    <id>http://log.cqh.ch/52.html</id>
+    <link href="http://pharmacycare.github.io/52.html"/>
+    <id>http://pharmacycare.github.io/52.html</id>
     <published>2020-06-05T14:35:52.314Z</published>
     <updated>2020-06-05T14:33:32.344Z</updated>
     
@@ -71,15 +71,15 @@
     </summary>
     
     
-      <category term="52. 中成药妇科" scheme="http://log.cqh.ch/categories/52-%E4%B8%AD%E6%88%90%E8%8D%AF%E5%A6%87%E7%A7%91/"/>
+      <category term="52. 中成药妇科" scheme="http://pharmacycare.github.io/categories/52-%E4%B8%AD%E6%88%90%E8%8D%AF%E5%A6%87%E7%A7%91/"/>
     
     
   </entry>
   
   <entry>
     <title>第五十三章 中成药其他</title>
-    <link href="http://log.cqh.ch/53.html"/>
-    <id>http://log.cqh.ch/53.html</id>
+    <link href="http://pharmacycare.github.io/53.html"/>
+    <id>http://pharmacycare.github.io/53.html</id>
     <published>2020-06-05T14:35:52.314Z</published>
     <updated>2020-06-05T15:03:19.724Z</updated>
     
@@ -102,15 +102,15 @@
     </summary>
     
     
-      <category term="53. 中成药其他" scheme="http://log.cqh.ch/categories/53-%E4%B8%AD%E6%88%90%E8%8D%AF%E5%85%B6%E4%BB%96/"/>
+      <category term="53. 中成药其他" scheme="http://pharmacycare.github.io/categories/53-%E4%B8%AD%E6%88%90%E8%8D%AF%E5%85%B6%E4%BB%96/"/>
     
     
   </entry>
   
   <entry>
     <title>第二十一章 皮肤科用药</title>
-    <link href="http://log.cqh.ch/21.html"/>
-    <id>http://log.cqh.ch/21.html</id>
+    <link href="http://pharmacycare.github.io/21.html"/>
+    <id>http://pharmacycare.github.io/21.html</id>
     <published>2020-06-05T14:35:52.294Z</published>
     <updated>2020-06-05T14:32:00.334Z</updated>
     
@@ -132,15 +132,15 @@
     </summary>
     
     
-      <category term="21. 皮肤科用药" scheme="http://log.cqh.ch/categories/21-%E7%9A%AE%E8%82%A4%E7%A7%91%E7%94%A8%E8%8D%AF/"/>
+      <category term="21. 皮肤科用药" scheme="http://pharmacycare.github.io/categories/21-%E7%9A%AE%E8%82%A4%E7%A7%91%E7%94%A8%E8%8D%AF/"/>
     
     
   </entry>
   
   <entry>
     <title>第二十二章  眼科用药</title>
-    <link href="http://log.cqh.ch/22.html"/>
-    <id>http://log.cqh.ch/22.html</id>
+    <link href="http://pharmacycare.github.io/22.html"/>
+    <id>http://pharmacycare.github.io/22.html</id>
     <published>2020-06-05T14:35:52.294Z</published>
     <updated>2020-04-29T04:31:30.130Z</updated>
     
@@ -162,15 +162,15 @@
     </summary>
     
     
-      <category term="22.  眼科用药" scheme="http://log.cqh.ch/categories/22-%E7%9C%BC%E7%A7%91%E7%94%A8%E8%8D%AF/"/>
+      <category term="22.  眼科用药" scheme="http://pharmacycare.github.io/categories/22-%E7%9C%BC%E7%A7%91%E7%94%A8%E8%8D%AF/"/>
     
     
   </entry>
   
   <entry>
     <title>第二十四章  妇产科用药</title>
-    <link href="http://log.cqh.ch/24.html"/>
-    <id>http://log.cqh.ch/24.html</id>
+    <link href="http://pharmacycare.github.io/24.html"/>
+    <id>http://pharmacycare.github.io/24.html</id>
     <published>2020-06-05T14:35:52.294Z</published>
     <updated>2020-04-29T04:31:35.320Z</updated>
     
@@ -192,15 +192,15 @@
     </summary>
     
     
-      <category term="24. 妇产科用药" scheme="http://log.cqh.ch/categories/24-%E5%A6%87%E4%BA%A7%E7%A7%91%E7%94%A8%E8%8D%AF/"/>
+      <category term="24. 妇产科用药" scheme="http://pharmacycare.github.io/categories/24-%E5%A6%87%E4%BA%A7%E7%A7%91%E7%94%A8%E8%8D%AF/"/>
     
     
   </entry>
   
   <entry>
     <title>第五十一章 中成药儿科</title>
-    <link href="http://log.cqh.ch/51.html"/>
-    <id>http://log.cqh.ch/51.html</id>
+    <link href="http://pharmacycare.github.io/51.html"/>
+    <id>http://pharmacycare.github.io/51.html</id>
     <published>2020-06-05T14:35:52.294Z</published>
     <updated>2020-04-29T04:26:00.560Z</updated>
     
@@ -222,15 +222,15 @@
     </summary>
     
     
-      <category term="51. 中成药儿科" scheme="http://log.cqh.ch/categories/51-%E4%B8%AD%E6%88%90%E8%8D%AF%E5%84%BF%E7%A7%91/"/>
+      <category term="51. 中成药儿科" scheme="http://pharmacycare.github.io/categories/51-%E4%B8%AD%E6%88%90%E8%8D%AF%E5%84%BF%E7%A7%91/"/>
     
     
   </entry>
   
   <entry>
     <title>第十九章 生物制品</title>
-    <link href="http://log.cqh.ch/19.html"/>
-    <id>http://log.cqh.ch/19.html</id>
+    <link href="http://pharmacycare.github.io/19.html"/>
+    <id>http://pharmacycare.github.io/19.html</id>
     <published>2020-06-05T14:35:52.284Z</published>
     <updated>2020-04-29T04:31:17.600Z</updated>
     
@@ -252,15 +252,15 @@
     </summary>
     
     
-      <category term="19. 生物制品" scheme="http://log.cqh.ch/categories/19-%E7%94%9F%E7%89%A9%E5%88%B6%E5%93%81/"/>
+      <category term="19. 生物制品" scheme="http://pharmacycare.github.io/categories/19-%E7%94%9F%E7%89%A9%E5%88%B6%E5%93%81/"/>
     
     
   </entry>
   
   <entry>
     <title>第十八章 解毒药</title>
-    <link href="http://log.cqh.ch/18.html"/>
-    <id>http://log.cqh.ch/18.html</id>
+    <link href="http://pharmacycare.github.io/18.html"/>
+    <id>http://pharmacycare.github.io/18.html</id>
     <published>2020-06-05T14:35:52.274Z</published>
     <updated>2020-04-29T04:31:37.890Z</updated>
     
@@ -282,45 +282,15 @@
     </summary>
     
     
-      <category term="18. 解毒药" scheme="http://log.cqh.ch/categories/18-%E8%A7%A3%E6%AF%92%E8%8D%AF/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>第十三章  抗变态反应药</title>
-    <link href="http://log.cqh.ch/13.html"/>
-    <id>http://log.cqh.ch/13.html</id>
-    <published>2020-06-05T14:35:52.264Z</published>
-    <updated>2020-04-29T04:31:43.150Z</updated>
-    
-    <content type="html"><![CDATA[<div class="toc"><!-- toc --><ul><li><a href="#lu-ben-na-min-chlorphenamine">氯苯那敏 chlorphenamine</a></li><li><a href="#sai-geng-ding-cyproheptadine">赛庚啶 Cyproheptadine</a></li><li><a href="#yi-bing-qin-promethazine">异丙嗪 Promethazine</a></li><li><a href="#tong-ti-fen-ketotifeno">酮替芬 Ketotifeno</a></li><li><a href="#lu-lei-ta-ding-loratadine">氯雷他定 loratadine</a></li><li><a href="#xi-ti-li-qin-levocetirizine">西替利嗪 Levocetirizine</a></li><li><a href="#di-lu-lei-ta-ding-desloratadine">地氯雷他定 Desloratadine</a></li></ul><!-- tocstop --></div><p>抗变态反应药主要用于防治机体因各种抗原物质（如细菌、病毒、寄生虫、花粉等）引起的变态反应（过敏反应）性疾病。它们主要是能拮抗引起过敏反应的介质（如组胺等）对其受体（如组胺H1受体）的作用，故又称为抗组胺药或组胺H1受体拮抗药。其中有些药物尚有一定的中枢抑制作用和抗胆碱作用，由此可导致一些共有的不良反应。<br>本章介绍包括临床常用的氯苯那敏（口服常释剂型）、苯海拉明（口服常释剂型、注射剂）、赛庚啶（口服常释剂型）和异丙嗪（口服常释剂型、注射剂）。<br>主要用于治疗过敏性鼻炎、过敏性结膜炎及过敏性皮肤病等。<br>它们主要的不良反应为其中枢抑制作用引起的头痛和嗜睡以及抗胆碱作用所致的口干、视力模糊、排尿困难、便秘等。<br>因此，应用本类药时应特别注意：①车船、飞机的驾驶人员、精密仪器操作者在工作前禁止服用有中枢神经抑制作用的坑组胺药物。②患闭角型青光眼、尿潴留、前列腺增生、幽门十二指肠梗阻癫痫的患者慎用。③孕妇及哺乳期妇女慎用。④新生儿和早产儿对本类药物抗胆碱作用的敏感性较高，不宜使用。⑤抗组胺药可抑制过敏原物质，以免影响皮试结界。<br>本类药物共有的药物相互作用为：①与酒精及其他中枢神经抑制药（如巴比妥酸盐类、催眠药、抗焦虑镇静药等）合用，可增加抗组胺药的中枢神经抑制作用。②与抗胆碱作用的药物（如阿托品、三环类抗抑郁药等）合用，可加强本类药物的抗胆碱作用。</p><h3><span id="lu-ben-na-min-chlorphenamine">氯苯那敏  chlorphenamine</span><a href="#lu-ben-na-min-chlorphenamine" class="header-anchor"></a></h3><h4><span id="gua-ying-zheng">【适应证】</span><a href="#gua-ying-zheng" class="header-anchor"></a></h4><p>本品适用于皮肤过敏症：荨麻疹、湿疹、皮炎、药疹、皮肤瘙痒症、神经性皮炎、虫咬症、日光性皮炎。也可用于过敏性鼻炎、血管舒缩性鼻炎、药物及食物过敏。与解热镇痛药配伍用于治疗感冒。</p><h4><span id="zhu-yi-shi-xiang">【注意事项】</span><a href="#zhu-yi-shi-xiang" class="header-anchor"></a></h4><p>1．对其他抗组胺药或下列药物过敏者，也可能对本药过敏，如麻黄碱、肾上腺素、异丙肾上腺素、间羟异丙肾上腺素（羟喘）、去甲肾上腺素等拟交感神经药。对碘过敏者对本品可能也过敏。<br>2．下列情况慎用：膀胱颈部梗阻、幽门十二指肠梗阻、消化性溃疡所致幽门狭窄、心血管疾病、青光眼（或有青光眼倾向者）、高血压、高血压危象、甲状腺机能亢进、前列腺肥大体征明显时。<br>3．本品不可应用于下呼吸道感染和哮喘发作的患者（因可使痰液变稠而加重疾病）。<br>4．用药期间，不得驾驶车、船或操作危险的机器。</p><h4><span id="yao-wu-xiang-hu-zuo-yong">【药物相互作用】</span><a href="#yao-wu-xiang-hu-zuo-yong" class="header-anchor"></a></h4><p>①同时饮酒或服用中枢神经抑制药，可使抗组胺药效增强。<br>②本品可增强金刚烷胺、抗胆碱药、氟哌啶醇、吩噻嗪类以及拟交感神经药等的作用。<br>③奎尼丁和本品同用，其类似阿托品样的效应加剧。<br>④本品和三环类抗抑郁药物同用时，可使后者增效。</p><h4><span id="jing-gao">【警告】</span><a href="#jing-gao" class="header-anchor"></a></h4><p>老年人对常用剂量的反应较敏感，应注意适当减量。</p><h4><span id="jin-ji-zheng">【禁忌证】</span><a href="#jin-ji-zheng" class="header-anchor"></a></h4><p>对本药过敏者禁用。</p><h4><span id="bu-liang-fan-ying">【不良反应】</span><a href="#bu-liang-fan-ying" class="header-anchor"></a></h4><p>主要不良反应有嗜睡、口渴、多尿、咽喉痛、困倦、虚弱感、心悸、皮肤淤斑、出血倾向。 </p><h4><span id="yong-fa-he-yong-liang">【用法和用量】</span><a href="#yong-fa-he-yong-liang" class="header-anchor"></a></h4><p>马来酸氯苯那敏片：口服。成人：一次4mg,一日3次。<br>马来酸氯苯那敏注射液：肌内注射。成人：一次5～20mg。</p><h4><span id="zhi-ji-he-gui-ge">【制剂和规格】</span><a href="#zhi-ji-he-gui-ge" class="header-anchor"></a></h4><p>马来酸氯苯那敏片：4mg。<br>马来酸氯苯那敏注射液：10mg。</p><h3><span id="sai-geng-ding-cyproheptadine">赛庚啶   Cyproheptadine</span><a href="#sai-geng-ding-cyproheptadine" class="header-anchor"></a></h3><h4><span id="gua-ying-zheng">【适应证】</span><a href="#gua-ying-zheng" class="header-anchor"></a></h4><p>用于过敏性疾病，如荨麻疹、丘疹性荨麻疹、皮肤瘙痒。</p><h4><span id="zhu-yi-shi-xiang">【注意事项】</span><a href="#zhu-yi-shi-xiang" class="header-anchor"></a></h4><p>⑴2岁以下儿童及虚弱的老人不推荐使用。<br>⑵过敏体质者慎用。<br>⑶余见本章概述。</p><h4><span id="jin-ji-zheng">【禁忌证】</span><a href="#jin-ji-zheng" class="header-anchor"></a></h4><p>⑴对本品过敏者禁用。<br>⑵孕妇、哺乳期妇女禁用。<br>⑶余见本章概述。</p><h4><span id="bu-liang-fan-ying">【不良反应】</span><a href="#bu-liang-fan-ying" class="header-anchor"></a></h4><p>嗜睡、口干、乏力、头晕、恶心等。</p><h4><span id="yong-fa-yong-liang">【用法用量】</span><a href="#yong-fa-yong-liang" class="header-anchor"></a></h4><p>口服。成人，一次2～4mg,一日2～3次。</p><h4><span id="zhi-ji-he-gui-ge">【制剂和规格】</span><a href="#zhi-ji-he-gui-ge" class="header-anchor"></a></h4><p>赛庚啶片：2mg。<br>赛庚啶乳膏：10g。</p><h3><span id="yi-bing-qin-promethazine">异丙嗪  Promethazine</span><a href="#yi-bing-qin-promethazine" class="header-anchor"></a></h3><h4><span id="gua-ying-zheng">【适应证】</span><a href="#gua-ying-zheng" class="header-anchor"></a></h4><p>⑴皮肤黏膜的过敏：适用于长期、季节性的过敏性鼻炎，血管舒缩性鼻炎，接触过敏原或食物而致的过敏性结膜炎、荨麻疹、血管神经性水肿，对血液或血浆制品的过敏反应，皮肤划痕症。<br>⑵晕动症：防治晕车、晕船、晕飞机。<br>⑶镇静、催眠：适用于手术前后的辅助治疗。也可用于减轻成人及儿童的恐惧感，呈浅睡眠状态。<br>⑷恶心、呕吐的治疗：适用于一些麻醉和手术后的恶心、呕吐，也用于防治放射病性或药源性恶心、呕吐。<br>⑸术后疼痛；可与止痛药合用，作为辅助用药。</p><h4><span id="zhu-yi-shi-xiang">【注意事项】</span><a href="#zhu-yi-shi-xiang" class="header-anchor"></a></h4><p>⑴对吩噻嗪类药高度过敏的患者，对本药可过敏。<br>⑵肝功能减退者慎用。<br>⑶2岁以下儿童不推荐使用。<br>⑷不宜与氨茶碱混合注射。<br>⑸诊断的干扰：葡萄糖耐量试验中可显示葡萄糖耐量增加。可干扰尿妊娠试验结果，呈假阳性或假阴性。<br>⑹余见本章概述。</p><h4><span id="jin-ji-zheng">【禁忌证】</span><a href="#jin-ji-zheng" class="header-anchor"></a></h4><p>⑴对本品过敏者禁用。<br>⑵早产儿、新生儿应禁用。<br>⑶余见本章概述。</p><h4><span id="bu-liang-fan-ying">【不良反应】</span><a href="#bu-liang-fan-ying" class="header-anchor"></a></h4><p>本品小剂量时玩明显副作用，但大量和长时间应用时可出现吩噻嗪类常见的不良反应，如嗜睡、头晕、耳鸣、增加皮肤对光的敏感性，多带噩梦、易激动、幻觉、儿童易发生锥体外系反应等。</p><h4><span id="yong-fa-he-yong-liang">【用法和用量】</span><a href="#yong-fa-he-yong-liang" class="header-anchor"></a></h4><p>⑴口服：成人，①抗过敏，一次12.5mg，一日4次，饭后及睡前服用，必要时睡前可增至25mg；②止吐，开始时一次25mg，必要时可每4～6小时服12.5～25mg；③抗眩晕，一次25mg，必要时一日2次;④镇静催眠，一次25～50mg，睡前服用。<br>⑵肌内注射：①抗过敏，一次25mg，必要时2小时后重复；②止吐，一次12.5～25mg，必要时每4小时重复一次；③镇静催眠，一次25～50mg。</p><h4><span id="zhi-ji-he-gui-ge">【制剂和规格】</span><a href="#zhi-ji-he-gui-ge" class="header-anchor"></a></h4><p>盐酸异丙嗪片： 25mg。<br>盐酸异丙嗪注射液： 1ml：25mg。</p><h3><span id="tong-ti-fen-ketotifeno">酮替芬  Ketotifeno</span><a href="#tong-ti-fen-ketotifeno" class="header-anchor"></a></h3><h4><span id="gua-ying-zheng">【适应证】</span><a href="#gua-ying-zheng" class="header-anchor"></a></h4><p> 本剂可广泛用于多种以IgE介导的变态反应病，包括支气管哮喘，喘息性支气管炎，过敏性咳嗽，过敏性鼻炎，过敏性花粉症，过敏性结膜炎，急性或慢性荨麻疹，异位性皮炎，接触性皮炎，光敏性皮炎，食物变态反应，药物变态反应，昆虫变态反应等。对于由免疫复合物引起的血管炎型病变如过敏性紫癜等亦有一定疗效。</p><h4><span id="zhu-yi-shi-xiang">【注意事项】</span><a href="#zhu-yi-shi-xiang" class="header-anchor"></a></h4><p>1．本药起效缓慢，对于支气管哮喘的缓解作用一般需连续用药2-4周后方渐出现，故在用药前应向病人解说清楚，配合治疗。<br>2．本药与镇静安眠药及酒精制剂有一定的协同作用，同时用药可加强困倦，乏力等症状，应予避免。<br>3．本药与抗组胺药物亦有一定协同作用，故当病人用抗组胺药效果不满意时，可考虑合并使用本药。<br>4．糖尿病患者在口服降糖药期间免用本药。<br>5．空中作业，驾驶人员，精密机械操纵者，需高度思维的工作人员，重要会议及社交活动或运动员在参赛前应免用此药。<br>6．早期妊娠妇女及授乳期妇女免用此药。<br>7．过量服用本药可引起昏睡，恶心等反应，应视情况给予对症处理，必要时予以洗胃或催吐，一面严密监护病人，采用支持治疗直至症状缓解。</p><h4><span id="jin-ji-zheng">【禁忌证】</span><a href="#jin-ji-zheng" class="header-anchor"></a></h4><p> 尚不明确。</p><h4><span id="bu-liang-fan-ying">【不良反应】</span><a href="#bu-liang-fan-ying" class="header-anchor"></a></h4><p>1．本药有与抗组胺药物相类似的中枢抑制作用，服后可出现困倦感、乏力感等。但在程度上比大多数传统的抗组胺药为轻。一般出现于用药初期，不必停药，持续用药一段时间后，中枢抑制反应即逐步减轻乃至消失。<br>2．少数病人于服药后有口干、恶心、胃肠不适等反应，但随用药时间延长，症状亦可逐渐缓解。<br>3．个别病人于服药后可出现过敏症状，主要表现为皮疹瘙痒、局部皮肤水肿等。如遇此情况应及时停药。</p><h4><span id="yong-fa-yu-yong-liang">【用法与用量】</span><a href="#yong-fa-yu-yong-liang" class="header-anchor"></a></h4><p> 口服，成人及12岁以上儿童，每日2次，每次1mg，一般于晨晚各服1次。对于晚间发作病人亦可改为每晚临睡前1次，每次1mg。6-12岁儿童，每日2次，每次0.5mg。3-6岁儿童，可按每日每公斤体重0.05mg投药。3岁以下儿童不推荐使用本药。</p><h4><span id="zhi-ji-yu-gui-ge">【制剂与规格】</span><a href="#zhi-ji-yu-gui-ge" class="header-anchor"></a></h4><p>富马酸酮替芬片：1mg。</p><h3><span id="lu-lei-ta-ding-loratadine">氯雷他定  loratadine</span><a href="#lu-lei-ta-ding-loratadine" class="header-anchor"></a></h3><h4><span id="gua-ying-zheng">【适应证】</span><a href="#gua-ying-zheng" class="header-anchor"></a></h4><p> 用于缓解过敏性鼻炎的鼻部或非鼻部症状，如喷嚏、流涕及鼻痒、鼻塞以及眼部痒及烧灼感。亦适用于缓解慢性荨麻疹、瘙痒性皮肤病及其他过敏性皮肤病的症状及体征。</p><h4><span id="zhu-yi-shi-xiang">【注意事项】</span><a href="#zhu-yi-shi-xiang" class="header-anchor"></a></h4><p>1、精神运动试验研究表明，本品与酒同时服时不会产生药力相加作用；<br>2、抗组胺药能清除或减轻皮肤对所有变应原的阳性反应，因此在作皮试前约48小时应停止使用氯雷他定；<br>3、本品对心脏功能无影响，但偶有心律失常报道，有心律失常病史者应慎用；<br>4、对肝功能不全者，消除半衰期有所延长，请在医师指导下使用，可按10mg/次，隔日1次服用。<br>5、肾功能不全者慎用。</p><h4><span id="jin-ji-zheng">【禁忌证】</span><a href="#jin-ji-zheng" class="header-anchor"></a></h4><p> 对本品任何成份过敏者或特异体质的患者禁用。</p><h4><span id="bu-liang-fan-ying">【不良反应】</span><a href="#bu-liang-fan-ying" class="header-anchor"></a></h4><p> 常见不良反应有乏力、头痛、嗜睡、口干、胃肠道不适(包括恶心、胃炎)以及皮疹等。偶见嗜睡，健忘及晨起面部肢端水肿。罕见不良反应有视觉模糊、血压降低或升高、晕厥、癫痫发作、乳房肿大、脱发、过敏反应、肝功能异常、心动过速、心悸、运动机能亢进、黄疸、肝炎、肝坏死、多形性红斑等。<br>文献报道，约300名6～12岁的儿童患者参加的随机对照临床试验中，口服氯雷他定10mg，每天1次，连续用药8～15天。其中188名儿童使用氯雷他定糖浆10mg/天。不良反应发生的类别和频率与成人相似。氯雷他定10mg所致的发育终止的发生率小于1% 。<br>在一项双盲、安慰剂对照的临床试验中，60名2～5岁患儿接受氯雷他定每天5mg，14天，未观察到非预期的不良反应。与2～5岁患者使用氯雷他定糖浆治疗有关的发生率在2～3%的不良反应包括：腹泻、鼻出血、咽炎、流感样症状、疲劳、口炎、牙齿不适、耳痛、病毒感染和皮疹。<br>除了上述发生率大于2%的不良反应以外，还发现以下不良反应：<br>自主神经系统：流泪、流涎、潮红、感觉迟钝、阳萎、多汗。<br>一般状况：血管神经性水肿、虚弱、背痛、视物模糊、胸痛、耳痛、眼痛、腿部抽筋、抑郁、寒颤、耳鸣、病毒感染、体重增加。<br>心血管系统：高血压、低血压、心悸、室上性快速性心律失常、晕厥、心动过速。<br>中枢和外周神经系统：眼睑痉挛、眩晕、感觉异常、震颤。<br>胃肠道系统：味觉改变、食欲下降、便秘、腹泻、消化不良、胃胀、胃炎、呃逆、食欲增加、恶心、呕吐。<br>肌肉骨骼系统：关节痛、肌痛。<br>精神神经系统：激动、健忘、焦虑、精神错乱、性欲下降、抑郁、注意力不集中、失眠、易怒。<br>生殖系统：乳房痛、痛经、月经过多、阴道炎。<br>呼吸系统：支气管炎、支气管痉挛、咳嗽、呼吸困难、咯血、喉炎、鼻干、咽炎、鼻窦炎、喷嚏。<br>皮肤及附属器：皮炎、毛发干燥、皮肤干燥、光敏反应、瘙痒症、紫癜、风疹。<br>泌尿系统：尿频、尿液外观颜色改变、尿失禁、尿潴留。<br>另外，服用本品还可偶发肝功异常(包括黄疸、肝炎和肝坏死)，秃发、过敏反应、乳腺增生，多形红斑、周围性水肿、血小板减少症、癫痫。</p><h4><span id="yong-fa-yu-yong-liang">【用法与用量】</span><a href="#yong-fa-yu-yong-liang" class="header-anchor"></a></h4><p> 口服，成人及大于12岁的儿童每天1次，每次10mg。2～12岁儿童，体重]30kg，每次10mg，每天一次 ，体重≤30kg，每次5mg，每天一次。</p><h4><span id="zhi-ji-yu-gui-ge">【制剂与规格】</span><a href="#zhi-ji-yu-gui-ge" class="header-anchor"></a></h4><p>氯雷他定分散片：10mg。</p><h3><span id="xi-ti-li-qin-levocetirizine">西替利嗪  Levocetirizine</span><a href="#xi-ti-li-qin-levocetirizine" class="header-anchor"></a></h3><h4><span id="gua-ying-zheng">【适应证】</span><a href="#gua-ying-zheng" class="header-anchor"></a></h4><p> 用于缓解变态反应性疾病的过敏症状,如：变应性鼻炎(包括眼睛的过敏症状)、荨麻疹、血管神经性水肿、接触性皮炎、虫咬性皮炎等皮肤粘膜的过敏性疾病;用于减轻感冒时的过敏症状。</p><h4><span id="zhu-yi-shi-xiang">【注意事项】</span><a href="#zhu-yi-shi-xiang" class="header-anchor"></a></h4><p>1.有肝功能障碍或障碍史者慎用。<br>2.高空作业、驾驶或操作机器期间慎用。<br>3.避免与镇静剂同服。<br>4.酒后避免使用本品。<br>5.肾功能减损患者使用本品适当减量。</p><h4><span id="jin-ji-zheng">【禁忌证】</span><a href="#jin-ji-zheng" class="header-anchor"></a></h4><p> 对本品及其它辅料过敏者禁用。</p><h4><span id="bu-liang-fan-ying">【不良反应】</span><a href="#bu-liang-fan-ying" class="header-anchor"></a></h4><p> 本品耐受性良好，不良反应轻微且多可自愈，常见不良反应有嗜睡、口干、头疼、乏力等。</p><h4><span id="yong-fa-yu-yong-liang">【用法与用量】</span><a href="#yong-fa-yu-yong-liang" class="header-anchor"></a></h4><p>盐酸左西替利嗪颗粒：口服，成人及6岁以上儿童用量为每日一次，每次两袋（5mg）。2～6岁儿童，每日一次，每次一袋（2.5mg）。</p><p>盐酸西替利嗪滴剂：<br>口服。推荐成年人和2岁以上儿童使用。滴剂使用时，打开瓶盖，然后瓶口垂直向下，药液即会滴出。<br>本品口服滴剂换算：<br>    28滴（1ml）=10mg；<br>    14滴（0.5ml）=5mg；<br>    7滴（0.25ml）=2.5mg<br>成年人及6岁以上儿童：在大多数正常情况下，推荐剂量为每日1ml（10mg，约28滴），一次口服。若病人对不良反应敏感，可每日早晚两次服用，每次0.5ml（5mg，约14滴）。从本品治疗适应症来看，建议可在晚餐期间用少量液体送服此药。<br>2-6岁儿童：每天一次0.5ml（5mg，约14滴）或早上和晚上各服用0.25ml（2.5mg，约7滴）。<br>1-2岁儿童：建议早上和晚上各服用0.25ml（2.5mg，约7滴）。<br>1岁以下儿童：虽然有6个月以上到1岁婴儿服用西替利嗪的临床数据，但相关评估尚未完全结束，如需使用，请遵医嘱，谨慎使用。<br>老年患者：肾功能正常的老年患者，参照成人推荐剂量。肾功能损伤的老年患者，参见肾功能损坏患者的推荐剂量。<br>肾功能损坏的患者：中度至重度肾功能损害患者，给药间隔应根据肾功能个体化。请采用下列公式和图表，参考病人的血清肌酐（mg/dl）计算。<br>肌酐清除率=[140-年龄（岁）]体重（kg）/72×血清肌酐（mg/dl），女性患者按计算结果再乘以0.85。<br>病人肾功能状态     肌酐清除率（ml/min）     剂量和服药次数<br>正常     ≥80     每日一次，1ml（10mg）<br>轻度肾功能不全     50-79     每日一次，1ml（10mg）<br>中度肾功能不全     30-49     每日一次，0.5ml（5mg）<br>严重肾功能不全     ＜30     每次0.5ml（5mg），隔日一次<br>肾病晚期-采用透析疗法的患者     ＜10     禁忌<br>对于肾功能损害的儿童患者。剂量的调整还需要考虑儿童的肝清除率和体重。<br>旰功能不全患者：肾功能正常的患者，无需调整给药剂量。</p><h4><span id="zhi-ji-yu-gui-ge">【制剂与规格】</span><a href="#zhi-ji-yu-gui-ge" class="header-anchor"></a></h4><p>盐酸左西替利嗪颗粒：2.5mg。<br>盐酸西替利嗪滴剂</p><h3><span id="di-lu-lei-ta-ding-desloratadine">地氯雷他定  Desloratadine</span><a href="#di-lu-lei-ta-ding-desloratadine" class="header-anchor"></a></h3><h4><span id="gua-ying-zheng">【适应证】</span><a href="#gua-ying-zheng" class="header-anchor"></a></h4><p> 用于缓解慢性特发性荨麻疹及常年性过敏性鼻炎的全身及局部症状。</p><h4><span id="zhu-yi-shi-xiang">【注意事项】</span><a href="#zhu-yi-shi-xiang" class="header-anchor"></a></h4><p>1)由于抗组胺药能清除或减轻皮肤对所有变应原的阳性反应，因而在进行任何皮肤过敏性试验前48小时，应停止使用本品；<br>2)严重肾功能不全患者慎用；<br>3)肝损伤、膀胱颈阻塞、尿道张力过强、前列腺肥大、青光眼患者应遵医嘱用药。</p><h4><span id="jin-ji-zheng">【禁忌证】</span><a href="#jin-ji-zheng" class="header-anchor"></a></h4><p> 对本品活性成份或辅料过敏者禁用。</p><h4><span id="bu-liang-fan-ying">【不良反应】</span><a href="#bu-liang-fan-ying" class="header-anchor"></a></h4><p> 在患儿的临床试验中，246例6个月至11岁的患儿服用地氯雷他定糖浆，2～11岁年龄组其不良事件的总发生率与安慰剂相似。在6个月至2岁年龄组，最常见的并且高于安慰剂组的不良事件为腹泻(3.7%)、发热(2.3%)和失眠(2.3%)。<br>在一系列以过敏性鼻炎和慢性特发性荨麻疹为适应症的临床试验中，患者按每天5毫克的推荐剂量服用地氯雷他定，试验组不良反应的发生率比安慰剂组高出3%。超过安慰剂组的最常见不良反应为疲倦(1.2%)、口干(0.8%)和头痛(0.6%)。<br>在地氯雷他定上市后罕有过敏性反应(包括过敏和皮疹)、心动过速、心悸、肝敏升高、肝炎和胆红素增加的报道。</p><h4><span id="yong-fa-yu-yong-liang">【用法与用量】</span><a href="#yong-fa-yu-yong-liang" class="header-anchor"></a></h4><p>(1)0.5 g：2.5 mg<br>1～5岁儿童：口服，每日一次，每次半袋(1.25 mg)。<br>6～11岁儿童：口服，每日一次，每次1袋(2.5 mg)。<br>成人和青少年(12岁或12岁以上)：口服，每日一次，每次2袋(5 mg)。<br>溶于水中，服用前搅拌均匀，地氯雷他定可与食物同时服用。<br>(2)1 g：5 mg<br>1～5岁儿童：口服，每日一次，每次1/4袋(1.25 mg)。<br>6～11岁儿童：口服。每日一次，每次半袋(2.5 mg)。<br>成人和青少年(12岁或12岁以上)：口服，每日一次，每次1袋(5 mg)。<br>溶于水中，服用前搅拌均匀，地氯雷他定可与食物同时服用。</p><h4><span id="zhi-ji-yu-gui-ge">【制剂与规格】</span><a href="#zhi-ji-yu-gui-ge" class="header-anchor"></a></h4><p>地氯雷他定干混悬剂：0.5g:2.5mg。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;div class=&quot;toc&quot;&gt;
-
-&lt;!-- toc --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#lu-ben-na-min-chlorphenamine&quot;&gt;氯苯那敏 chlorphenamine&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#sai-geng-ding-c
-      
-    
-    </summary>
-    
-    
-      <category term="13. 抗变态反应药" scheme="http://log.cqh.ch/categories/13-%E6%8A%97%E5%8F%98%E6%80%81%E5%8F%8D%E5%BA%94%E8%8D%AF/"/>
+      <category term="18. 解毒药" scheme="http://pharmacycare.github.io/categories/18-%E8%A7%A3%E6%AF%92%E8%8D%AF/"/>
     
     
   </entry>
   
   <entry>
     <title>第十四章  免疫系统用药</title>
-    <link href="http://log.cqh.ch/14.html"/>
-    <id>http://log.cqh.ch/14.html</id>
+    <link href="http://pharmacycare.github.io/14.html"/>
+    <id>http://pharmacycare.github.io/14.html</id>
     <published>2020-06-05T14:35:52.264Z</published>
     <updated>2020-04-29T04:31:42.320Z</updated>
     
@@ -348,15 +318,45 @@
     </summary>
     
     
-      <category term="14.  免疫系统用药" scheme="http://log.cqh.ch/categories/14-%E5%85%8D%E7%96%AB%E7%B3%BB%E7%BB%9F%E7%94%A8%E8%8D%AF/"/>
+      <category term="14.  免疫系统用药" scheme="http://pharmacycare.github.io/categories/14-%E5%85%8D%E7%96%AB%E7%B3%BB%E7%BB%9F%E7%94%A8%E8%8D%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>第十三章  抗变态反应药</title>
+    <link href="http://pharmacycare.github.io/13.html"/>
+    <id>http://pharmacycare.github.io/13.html</id>
+    <published>2020-06-05T14:35:52.264Z</published>
+    <updated>2020-04-29T04:31:43.150Z</updated>
+    
+    <content type="html"><![CDATA[<div class="toc"><!-- toc --><ul><li><a href="#lu-ben-na-min-chlorphenamine">氯苯那敏 chlorphenamine</a></li><li><a href="#sai-geng-ding-cyproheptadine">赛庚啶 Cyproheptadine</a></li><li><a href="#yi-bing-qin-promethazine">异丙嗪 Promethazine</a></li><li><a href="#tong-ti-fen-ketotifeno">酮替芬 Ketotifeno</a></li><li><a href="#lu-lei-ta-ding-loratadine">氯雷他定 loratadine</a></li><li><a href="#xi-ti-li-qin-levocetirizine">西替利嗪 Levocetirizine</a></li><li><a href="#di-lu-lei-ta-ding-desloratadine">地氯雷他定 Desloratadine</a></li></ul><!-- tocstop --></div><p>抗变态反应药主要用于防治机体因各种抗原物质（如细菌、病毒、寄生虫、花粉等）引起的变态反应（过敏反应）性疾病。它们主要是能拮抗引起过敏反应的介质（如组胺等）对其受体（如组胺H1受体）的作用，故又称为抗组胺药或组胺H1受体拮抗药。其中有些药物尚有一定的中枢抑制作用和抗胆碱作用，由此可导致一些共有的不良反应。<br>本章介绍包括临床常用的氯苯那敏（口服常释剂型）、苯海拉明（口服常释剂型、注射剂）、赛庚啶（口服常释剂型）和异丙嗪（口服常释剂型、注射剂）。<br>主要用于治疗过敏性鼻炎、过敏性结膜炎及过敏性皮肤病等。<br>它们主要的不良反应为其中枢抑制作用引起的头痛和嗜睡以及抗胆碱作用所致的口干、视力模糊、排尿困难、便秘等。<br>因此，应用本类药时应特别注意：①车船、飞机的驾驶人员、精密仪器操作者在工作前禁止服用有中枢神经抑制作用的坑组胺药物。②患闭角型青光眼、尿潴留、前列腺增生、幽门十二指肠梗阻癫痫的患者慎用。③孕妇及哺乳期妇女慎用。④新生儿和早产儿对本类药物抗胆碱作用的敏感性较高，不宜使用。⑤抗组胺药可抑制过敏原物质，以免影响皮试结界。<br>本类药物共有的药物相互作用为：①与酒精及其他中枢神经抑制药（如巴比妥酸盐类、催眠药、抗焦虑镇静药等）合用，可增加抗组胺药的中枢神经抑制作用。②与抗胆碱作用的药物（如阿托品、三环类抗抑郁药等）合用，可加强本类药物的抗胆碱作用。</p><h3><span id="lu-ben-na-min-chlorphenamine">氯苯那敏  chlorphenamine</span><a href="#lu-ben-na-min-chlorphenamine" class="header-anchor"></a></h3><h4><span id="gua-ying-zheng">【适应证】</span><a href="#gua-ying-zheng" class="header-anchor"></a></h4><p>本品适用于皮肤过敏症：荨麻疹、湿疹、皮炎、药疹、皮肤瘙痒症、神经性皮炎、虫咬症、日光性皮炎。也可用于过敏性鼻炎、血管舒缩性鼻炎、药物及食物过敏。与解热镇痛药配伍用于治疗感冒。</p><h4><span id="zhu-yi-shi-xiang">【注意事项】</span><a href="#zhu-yi-shi-xiang" class="header-anchor"></a></h4><p>1．对其他抗组胺药或下列药物过敏者，也可能对本药过敏，如麻黄碱、肾上腺素、异丙肾上腺素、间羟异丙肾上腺素（羟喘）、去甲肾上腺素等拟交感神经药。对碘过敏者对本品可能也过敏。<br>2．下列情况慎用：膀胱颈部梗阻、幽门十二指肠梗阻、消化性溃疡所致幽门狭窄、心血管疾病、青光眼（或有青光眼倾向者）、高血压、高血压危象、甲状腺机能亢进、前列腺肥大体征明显时。<br>3．本品不可应用于下呼吸道感染和哮喘发作的患者（因可使痰液变稠而加重疾病）。<br>4．用药期间，不得驾驶车、船或操作危险的机器。</p><h4><span id="yao-wu-xiang-hu-zuo-yong">【药物相互作用】</span><a href="#yao-wu-xiang-hu-zuo-yong" class="header-anchor"></a></h4><p>①同时饮酒或服用中枢神经抑制药，可使抗组胺药效增强。<br>②本品可增强金刚烷胺、抗胆碱药、氟哌啶醇、吩噻嗪类以及拟交感神经药等的作用。<br>③奎尼丁和本品同用，其类似阿托品样的效应加剧。<br>④本品和三环类抗抑郁药物同用时，可使后者增效。</p><h4><span id="jing-gao">【警告】</span><a href="#jing-gao" class="header-anchor"></a></h4><p>老年人对常用剂量的反应较敏感，应注意适当减量。</p><h4><span id="jin-ji-zheng">【禁忌证】</span><a href="#jin-ji-zheng" class="header-anchor"></a></h4><p>对本药过敏者禁用。</p><h4><span id="bu-liang-fan-ying">【不良反应】</span><a href="#bu-liang-fan-ying" class="header-anchor"></a></h4><p>主要不良反应有嗜睡、口渴、多尿、咽喉痛、困倦、虚弱感、心悸、皮肤淤斑、出血倾向。 </p><h4><span id="yong-fa-he-yong-liang">【用法和用量】</span><a href="#yong-fa-he-yong-liang" class="header-anchor"></a></h4><p>马来酸氯苯那敏片：口服。成人：一次4mg,一日3次。<br>马来酸氯苯那敏注射液：肌内注射。成人：一次5～20mg。</p><h4><span id="zhi-ji-he-gui-ge">【制剂和规格】</span><a href="#zhi-ji-he-gui-ge" class="header-anchor"></a></h4><p>马来酸氯苯那敏片：4mg。<br>马来酸氯苯那敏注射液：10mg。</p><h3><span id="sai-geng-ding-cyproheptadine">赛庚啶   Cyproheptadine</span><a href="#sai-geng-ding-cyproheptadine" class="header-anchor"></a></h3><h4><span id="gua-ying-zheng">【适应证】</span><a href="#gua-ying-zheng" class="header-anchor"></a></h4><p>用于过敏性疾病，如荨麻疹、丘疹性荨麻疹、皮肤瘙痒。</p><h4><span id="zhu-yi-shi-xiang">【注意事项】</span><a href="#zhu-yi-shi-xiang" class="header-anchor"></a></h4><p>⑴2岁以下儿童及虚弱的老人不推荐使用。<br>⑵过敏体质者慎用。<br>⑶余见本章概述。</p><h4><span id="jin-ji-zheng">【禁忌证】</span><a href="#jin-ji-zheng" class="header-anchor"></a></h4><p>⑴对本品过敏者禁用。<br>⑵孕妇、哺乳期妇女禁用。<br>⑶余见本章概述。</p><h4><span id="bu-liang-fan-ying">【不良反应】</span><a href="#bu-liang-fan-ying" class="header-anchor"></a></h4><p>嗜睡、口干、乏力、头晕、恶心等。</p><h4><span id="yong-fa-yong-liang">【用法用量】</span><a href="#yong-fa-yong-liang" class="header-anchor"></a></h4><p>口服。成人，一次2～4mg,一日2～3次。</p><h4><span id="zhi-ji-he-gui-ge">【制剂和规格】</span><a href="#zhi-ji-he-gui-ge" class="header-anchor"></a></h4><p>赛庚啶片：2mg。<br>赛庚啶乳膏：10g。</p><h3><span id="yi-bing-qin-promethazine">异丙嗪  Promethazine</span><a href="#yi-bing-qin-promethazine" class="header-anchor"></a></h3><h4><span id="gua-ying-zheng">【适应证】</span><a href="#gua-ying-zheng" class="header-anchor"></a></h4><p>⑴皮肤黏膜的过敏：适用于长期、季节性的过敏性鼻炎，血管舒缩性鼻炎，接触过敏原或食物而致的过敏性结膜炎、荨麻疹、血管神经性水肿，对血液或血浆制品的过敏反应，皮肤划痕症。<br>⑵晕动症：防治晕车、晕船、晕飞机。<br>⑶镇静、催眠：适用于手术前后的辅助治疗。也可用于减轻成人及儿童的恐惧感，呈浅睡眠状态。<br>⑷恶心、呕吐的治疗：适用于一些麻醉和手术后的恶心、呕吐，也用于防治放射病性或药源性恶心、呕吐。<br>⑸术后疼痛；可与止痛药合用，作为辅助用药。</p><h4><span id="zhu-yi-shi-xiang">【注意事项】</span><a href="#zhu-yi-shi-xiang" class="header-anchor"></a></h4><p>⑴对吩噻嗪类药高度过敏的患者，对本药可过敏。<br>⑵肝功能减退者慎用。<br>⑶2岁以下儿童不推荐使用。<br>⑷不宜与氨茶碱混合注射。<br>⑸诊断的干扰：葡萄糖耐量试验中可显示葡萄糖耐量增加。可干扰尿妊娠试验结果，呈假阳性或假阴性。<br>⑹余见本章概述。</p><h4><span id="jin-ji-zheng">【禁忌证】</span><a href="#jin-ji-zheng" class="header-anchor"></a></h4><p>⑴对本品过敏者禁用。<br>⑵早产儿、新生儿应禁用。<br>⑶余见本章概述。</p><h4><span id="bu-liang-fan-ying">【不良反应】</span><a href="#bu-liang-fan-ying" class="header-anchor"></a></h4><p>本品小剂量时玩明显副作用，但大量和长时间应用时可出现吩噻嗪类常见的不良反应，如嗜睡、头晕、耳鸣、增加皮肤对光的敏感性，多带噩梦、易激动、幻觉、儿童易发生锥体外系反应等。</p><h4><span id="yong-fa-he-yong-liang">【用法和用量】</span><a href="#yong-fa-he-yong-liang" class="header-anchor"></a></h4><p>⑴口服：成人，①抗过敏，一次12.5mg，一日4次，饭后及睡前服用，必要时睡前可增至25mg；②止吐，开始时一次25mg，必要时可每4～6小时服12.5～25mg；③抗眩晕，一次25mg，必要时一日2次;④镇静催眠，一次25～50mg，睡前服用。<br>⑵肌内注射：①抗过敏，一次25mg，必要时2小时后重复；②止吐，一次12.5～25mg，必要时每4小时重复一次；③镇静催眠，一次25～50mg。</p><h4><span id="zhi-ji-he-gui-ge">【制剂和规格】</span><a href="#zhi-ji-he-gui-ge" class="header-anchor"></a></h4><p>盐酸异丙嗪片： 25mg。<br>盐酸异丙嗪注射液： 1ml：25mg。</p><h3><span id="tong-ti-fen-ketotifeno">酮替芬  Ketotifeno</span><a href="#tong-ti-fen-ketotifeno" class="header-anchor"></a></h3><h4><span id="gua-ying-zheng">【适应证】</span><a href="#gua-ying-zheng" class="header-anchor"></a></h4><p> 本剂可广泛用于多种以IgE介导的变态反应病，包括支气管哮喘，喘息性支气管炎，过敏性咳嗽，过敏性鼻炎，过敏性花粉症，过敏性结膜炎，急性或慢性荨麻疹，异位性皮炎，接触性皮炎，光敏性皮炎，食物变态反应，药物变态反应，昆虫变态反应等。对于由免疫复合物引起的血管炎型病变如过敏性紫癜等亦有一定疗效。</p><h4><span id="zhu-yi-shi-xiang">【注意事项】</span><a href="#zhu-yi-shi-xiang" class="header-anchor"></a></h4><p>1．本药起效缓慢，对于支气管哮喘的缓解作用一般需连续用药2-4周后方渐出现，故在用药前应向病人解说清楚，配合治疗。<br>2．本药与镇静安眠药及酒精制剂有一定的协同作用，同时用药可加强困倦，乏力等症状，应予避免。<br>3．本药与抗组胺药物亦有一定协同作用，故当病人用抗组胺药效果不满意时，可考虑合并使用本药。<br>4．糖尿病患者在口服降糖药期间免用本药。<br>5．空中作业，驾驶人员，精密机械操纵者，需高度思维的工作人员，重要会议及社交活动或运动员在参赛前应免用此药。<br>6．早期妊娠妇女及授乳期妇女免用此药。<br>7．过量服用本药可引起昏睡，恶心等反应，应视情况给予对症处理，必要时予以洗胃或催吐，一面严密监护病人，采用支持治疗直至症状缓解。</p><h4><span id="jin-ji-zheng">【禁忌证】</span><a href="#jin-ji-zheng" class="header-anchor"></a></h4><p> 尚不明确。</p><h4><span id="bu-liang-fan-ying">【不良反应】</span><a href="#bu-liang-fan-ying" class="header-anchor"></a></h4><p>1．本药有与抗组胺药物相类似的中枢抑制作用，服后可出现困倦感、乏力感等。但在程度上比大多数传统的抗组胺药为轻。一般出现于用药初期，不必停药，持续用药一段时间后，中枢抑制反应即逐步减轻乃至消失。<br>2．少数病人于服药后有口干、恶心、胃肠不适等反应，但随用药时间延长，症状亦可逐渐缓解。<br>3．个别病人于服药后可出现过敏症状，主要表现为皮疹瘙痒、局部皮肤水肿等。如遇此情况应及时停药。</p><h4><span id="yong-fa-yu-yong-liang">【用法与用量】</span><a href="#yong-fa-yu-yong-liang" class="header-anchor"></a></h4><p> 口服，成人及12岁以上儿童，每日2次，每次1mg，一般于晨晚各服1次。对于晚间发作病人亦可改为每晚临睡前1次，每次1mg。6-12岁儿童，每日2次，每次0.5mg。3-6岁儿童，可按每日每公斤体重0.05mg投药。3岁以下儿童不推荐使用本药。</p><h4><span id="zhi-ji-yu-gui-ge">【制剂与规格】</span><a href="#zhi-ji-yu-gui-ge" class="header-anchor"></a></h4><p>富马酸酮替芬片：1mg。</p><h3><span id="lu-lei-ta-ding-loratadine">氯雷他定  loratadine</span><a href="#lu-lei-ta-ding-loratadine" class="header-anchor"></a></h3><h4><span id="gua-ying-zheng">【适应证】</span><a href="#gua-ying-zheng" class="header-anchor"></a></h4><p> 用于缓解过敏性鼻炎的鼻部或非鼻部症状，如喷嚏、流涕及鼻痒、鼻塞以及眼部痒及烧灼感。亦适用于缓解慢性荨麻疹、瘙痒性皮肤病及其他过敏性皮肤病的症状及体征。</p><h4><span id="zhu-yi-shi-xiang">【注意事项】</span><a href="#zhu-yi-shi-xiang" class="header-anchor"></a></h4><p>1、精神运动试验研究表明，本品与酒同时服时不会产生药力相加作用；<br>2、抗组胺药能清除或减轻皮肤对所有变应原的阳性反应，因此在作皮试前约48小时应停止使用氯雷他定；<br>3、本品对心脏功能无影响，但偶有心律失常报道，有心律失常病史者应慎用；<br>4、对肝功能不全者，消除半衰期有所延长，请在医师指导下使用，可按10mg/次，隔日1次服用。<br>5、肾功能不全者慎用。</p><h4><span id="jin-ji-zheng">【禁忌证】</span><a href="#jin-ji-zheng" class="header-anchor"></a></h4><p> 对本品任何成份过敏者或特异体质的患者禁用。</p><h4><span id="bu-liang-fan-ying">【不良反应】</span><a href="#bu-liang-fan-ying" class="header-anchor"></a></h4><p> 常见不良反应有乏力、头痛、嗜睡、口干、胃肠道不适(包括恶心、胃炎)以及皮疹等。偶见嗜睡，健忘及晨起面部肢端水肿。罕见不良反应有视觉模糊、血压降低或升高、晕厥、癫痫发作、乳房肿大、脱发、过敏反应、肝功能异常、心动过速、心悸、运动机能亢进、黄疸、肝炎、肝坏死、多形性红斑等。<br>文献报道，约300名6～12岁的儿童患者参加的随机对照临床试验中，口服氯雷他定10mg，每天1次，连续用药8～15天。其中188名儿童使用氯雷他定糖浆10mg/天。不良反应发生的类别和频率与成人相似。氯雷他定10mg所致的发育终止的发生率小于1% 。<br>在一项双盲、安慰剂对照的临床试验中，60名2～5岁患儿接受氯雷他定每天5mg，14天，未观察到非预期的不良反应。与2～5岁患者使用氯雷他定糖浆治疗有关的发生率在2～3%的不良反应包括：腹泻、鼻出血、咽炎、流感样症状、疲劳、口炎、牙齿不适、耳痛、病毒感染和皮疹。<br>除了上述发生率大于2%的不良反应以外，还发现以下不良反应：<br>自主神经系统：流泪、流涎、潮红、感觉迟钝、阳萎、多汗。<br>一般状况：血管神经性水肿、虚弱、背痛、视物模糊、胸痛、耳痛、眼痛、腿部抽筋、抑郁、寒颤、耳鸣、病毒感染、体重增加。<br>心血管系统：高血压、低血压、心悸、室上性快速性心律失常、晕厥、心动过速。<br>中枢和外周神经系统：眼睑痉挛、眩晕、感觉异常、震颤。<br>胃肠道系统：味觉改变、食欲下降、便秘、腹泻、消化不良、胃胀、胃炎、呃逆、食欲增加、恶心、呕吐。<br>肌肉骨骼系统：关节痛、肌痛。<br>精神神经系统：激动、健忘、焦虑、精神错乱、性欲下降、抑郁、注意力不集中、失眠、易怒。<br>生殖系统：乳房痛、痛经、月经过多、阴道炎。<br>呼吸系统：支气管炎、支气管痉挛、咳嗽、呼吸困难、咯血、喉炎、鼻干、咽炎、鼻窦炎、喷嚏。<br>皮肤及附属器：皮炎、毛发干燥、皮肤干燥、光敏反应、瘙痒症、紫癜、风疹。<br>泌尿系统：尿频、尿液外观颜色改变、尿失禁、尿潴留。<br>另外，服用本品还可偶发肝功异常(包括黄疸、肝炎和肝坏死)，秃发、过敏反应、乳腺增生，多形红斑、周围性水肿、血小板减少症、癫痫。</p><h4><span id="yong-fa-yu-yong-liang">【用法与用量】</span><a href="#yong-fa-yu-yong-liang" class="header-anchor"></a></h4><p> 口服，成人及大于12岁的儿童每天1次，每次10mg。2～12岁儿童，体重]30kg，每次10mg，每天一次 ，体重≤30kg，每次5mg，每天一次。</p><h4><span id="zhi-ji-yu-gui-ge">【制剂与规格】</span><a href="#zhi-ji-yu-gui-ge" class="header-anchor"></a></h4><p>氯雷他定分散片：10mg。</p><h3><span id="xi-ti-li-qin-levocetirizine">西替利嗪  Levocetirizine</span><a href="#xi-ti-li-qin-levocetirizine" class="header-anchor"></a></h3><h4><span id="gua-ying-zheng">【适应证】</span><a href="#gua-ying-zheng" class="header-anchor"></a></h4><p> 用于缓解变态反应性疾病的过敏症状,如：变应性鼻炎(包括眼睛的过敏症状)、荨麻疹、血管神经性水肿、接触性皮炎、虫咬性皮炎等皮肤粘膜的过敏性疾病;用于减轻感冒时的过敏症状。</p><h4><span id="zhu-yi-shi-xiang">【注意事项】</span><a href="#zhu-yi-shi-xiang" class="header-anchor"></a></h4><p>1.有肝功能障碍或障碍史者慎用。<br>2.高空作业、驾驶或操作机器期间慎用。<br>3.避免与镇静剂同服。<br>4.酒后避免使用本品。<br>5.肾功能减损患者使用本品适当减量。</p><h4><span id="jin-ji-zheng">【禁忌证】</span><a href="#jin-ji-zheng" class="header-anchor"></a></h4><p> 对本品及其它辅料过敏者禁用。</p><h4><span id="bu-liang-fan-ying">【不良反应】</span><a href="#bu-liang-fan-ying" class="header-anchor"></a></h4><p> 本品耐受性良好，不良反应轻微且多可自愈，常见不良反应有嗜睡、口干、头疼、乏力等。</p><h4><span id="yong-fa-yu-yong-liang">【用法与用量】</span><a href="#yong-fa-yu-yong-liang" class="header-anchor"></a></h4><p>盐酸左西替利嗪颗粒：口服，成人及6岁以上儿童用量为每日一次，每次两袋（5mg）。2～6岁儿童，每日一次，每次一袋（2.5mg）。</p><p>盐酸西替利嗪滴剂：<br>口服。推荐成年人和2岁以上儿童使用。滴剂使用时，打开瓶盖，然后瓶口垂直向下，药液即会滴出。<br>本品口服滴剂换算：<br>    28滴（1ml）=10mg；<br>    14滴（0.5ml）=5mg；<br>    7滴（0.25ml）=2.5mg<br>成年人及6岁以上儿童：在大多数正常情况下，推荐剂量为每日1ml（10mg，约28滴），一次口服。若病人对不良反应敏感，可每日早晚两次服用，每次0.5ml（5mg，约14滴）。从本品治疗适应症来看，建议可在晚餐期间用少量液体送服此药。<br>2-6岁儿童：每天一次0.5ml（5mg，约14滴）或早上和晚上各服用0.25ml（2.5mg，约7滴）。<br>1-2岁儿童：建议早上和晚上各服用0.25ml（2.5mg，约7滴）。<br>1岁以下儿童：虽然有6个月以上到1岁婴儿服用西替利嗪的临床数据，但相关评估尚未完全结束，如需使用，请遵医嘱，谨慎使用。<br>老年患者：肾功能正常的老年患者，参照成人推荐剂量。肾功能损伤的老年患者，参见肾功能损坏患者的推荐剂量。<br>肾功能损坏的患者：中度至重度肾功能损害患者，给药间隔应根据肾功能个体化。请采用下列公式和图表，参考病人的血清肌酐（mg/dl）计算。<br>肌酐清除率=[140-年龄（岁）]体重（kg）/72×血清肌酐（mg/dl），女性患者按计算结果再乘以0.85。<br>病人肾功能状态     肌酐清除率（ml/min）     剂量和服药次数<br>正常     ≥80     每日一次，1ml（10mg）<br>轻度肾功能不全     50-79     每日一次，1ml（10mg）<br>中度肾功能不全     30-49     每日一次，0.5ml（5mg）<br>严重肾功能不全     ＜30     每次0.5ml（5mg），隔日一次<br>肾病晚期-采用透析疗法的患者     ＜10     禁忌<br>对于肾功能损害的儿童患者。剂量的调整还需要考虑儿童的肝清除率和体重。<br>旰功能不全患者：肾功能正常的患者，无需调整给药剂量。</p><h4><span id="zhi-ji-yu-gui-ge">【制剂与规格】</span><a href="#zhi-ji-yu-gui-ge" class="header-anchor"></a></h4><p>盐酸左西替利嗪颗粒：2.5mg。<br>盐酸西替利嗪滴剂</p><h3><span id="di-lu-lei-ta-ding-desloratadine">地氯雷他定  Desloratadine</span><a href="#di-lu-lei-ta-ding-desloratadine" class="header-anchor"></a></h3><h4><span id="gua-ying-zheng">【适应证】</span><a href="#gua-ying-zheng" class="header-anchor"></a></h4><p> 用于缓解慢性特发性荨麻疹及常年性过敏性鼻炎的全身及局部症状。</p><h4><span id="zhu-yi-shi-xiang">【注意事项】</span><a href="#zhu-yi-shi-xiang" class="header-anchor"></a></h4><p>1)由于抗组胺药能清除或减轻皮肤对所有变应原的阳性反应，因而在进行任何皮肤过敏性试验前48小时，应停止使用本品；<br>2)严重肾功能不全患者慎用；<br>3)肝损伤、膀胱颈阻塞、尿道张力过强、前列腺肥大、青光眼患者应遵医嘱用药。</p><h4><span id="jin-ji-zheng">【禁忌证】</span><a href="#jin-ji-zheng" class="header-anchor"></a></h4><p> 对本品活性成份或辅料过敏者禁用。</p><h4><span id="bu-liang-fan-ying">【不良反应】</span><a href="#bu-liang-fan-ying" class="header-anchor"></a></h4><p> 在患儿的临床试验中，246例6个月至11岁的患儿服用地氯雷他定糖浆，2～11岁年龄组其不良事件的总发生率与安慰剂相似。在6个月至2岁年龄组，最常见的并且高于安慰剂组的不良事件为腹泻(3.7%)、发热(2.3%)和失眠(2.3%)。<br>在一系列以过敏性鼻炎和慢性特发性荨麻疹为适应症的临床试验中，患者按每天5毫克的推荐剂量服用地氯雷他定，试验组不良反应的发生率比安慰剂组高出3%。超过安慰剂组的最常见不良反应为疲倦(1.2%)、口干(0.8%)和头痛(0.6%)。<br>在地氯雷他定上市后罕有过敏性反应(包括过敏和皮疹)、心动过速、心悸、肝敏升高、肝炎和胆红素增加的报道。</p><h4><span id="yong-fa-yu-yong-liang">【用法与用量】</span><a href="#yong-fa-yu-yong-liang" class="header-anchor"></a></h4><p>(1)0.5 g：2.5 mg<br>1～5岁儿童：口服，每日一次，每次半袋(1.25 mg)。<br>6～11岁儿童：口服，每日一次，每次1袋(2.5 mg)。<br>成人和青少年(12岁或12岁以上)：口服，每日一次，每次2袋(5 mg)。<br>溶于水中，服用前搅拌均匀，地氯雷他定可与食物同时服用。<br>(2)1 g：5 mg<br>1～5岁儿童：口服，每日一次，每次1/4袋(1.25 mg)。<br>6～11岁儿童：口服。每日一次，每次半袋(2.5 mg)。<br>成人和青少年(12岁或12岁以上)：口服，每日一次，每次1袋(5 mg)。<br>溶于水中，服用前搅拌均匀，地氯雷他定可与食物同时服用。</p><h4><span id="zhi-ji-yu-gui-ge">【制剂与规格】</span><a href="#zhi-ji-yu-gui-ge" class="header-anchor"></a></h4><p>地氯雷他定干混悬剂：0.5g:2.5mg。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div class=&quot;toc&quot;&gt;
+
+&lt;!-- toc --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#lu-ben-na-min-chlorphenamine&quot;&gt;氯苯那敏 chlorphenamine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#sai-geng-ding-c
+      
+    
+    </summary>
+    
+    
+      <category term="13. 抗变态反应药" scheme="http://pharmacycare.github.io/categories/13-%E6%8A%97%E5%8F%98%E6%80%81%E5%8F%8D%E5%BA%94%E8%8D%AF/"/>
     
     
   </entry>
   
   <entry>
     <title>第十五章  抗肿瘤药</title>
-    <link href="http://log.cqh.ch/15.html"/>
-    <id>http://log.cqh.ch/15.html</id>
+    <link href="http://pharmacycare.github.io/15.html"/>
+    <id>http://pharmacycare.github.io/15.html</id>
     <published>2020-06-05T14:35:52.264Z</published>
     <updated>2020-04-29T04:31:41.340Z</updated>
     
@@ -378,15 +378,15 @@
     </summary>
     
     
-      <category term="15.  抗肿瘤药" scheme="http://log.cqh.ch/categories/15-%E6%8A%97%E8%82%BF%E7%98%A4%E8%8D%AF/"/>
+      <category term="15.  抗肿瘤药" scheme="http://pharmacycare.github.io/categories/15-%E6%8A%97%E8%82%BF%E7%98%A4%E8%8D%AF/"/>
     
     
   </entry>
   
   <entry>
     <title>第十六章  维生素、矿物质类药</title>
-    <link href="http://log.cqh.ch/16.html"/>
-    <id>http://log.cqh.ch/16.html</id>
+    <link href="http://pharmacycare.github.io/16.html"/>
+    <id>http://pharmacycare.github.io/16.html</id>
     <published>2020-06-05T14:35:52.264Z</published>
     <updated>2020-04-29T04:31:40.370Z</updated>
     
@@ -408,15 +408,15 @@
     </summary>
     
     
-      <category term="16.  维生素、矿物质类药" scheme="http://log.cqh.ch/categories/16-%E7%BB%B4%E7%94%9F%E7%B4%A0%E3%80%81%E7%9F%BF%E7%89%A9%E8%B4%A8%E7%B1%BB%E8%8D%AF/"/>
+      <category term="16.  维生素、矿物质类药" scheme="http://pharmacycare.github.io/categories/16-%E7%BB%B4%E7%94%9F%E7%B4%A0%E3%80%81%E7%9F%BF%E7%89%A9%E8%B4%A8%E7%B1%BB%E8%8D%AF/"/>
     
     
   </entry>
   
   <entry>
     <title>第十七章 调节水、电解质及酸碱平衡药</title>
-    <link href="http://log.cqh.ch/17.html"/>
-    <id>http://log.cqh.ch/17.html</id>
+    <link href="http://pharmacycare.github.io/17.html"/>
+    <id>http://pharmacycare.github.io/17.html</id>
     <published>2020-06-05T14:35:52.264Z</published>
     <updated>2020-04-29T04:31:39.210Z</updated>
     
@@ -438,15 +438,15 @@
     </summary>
     
     
-      <category term="17.调节水、电解质及酸碱平衡药" scheme="http://log.cqh.ch/categories/17-%E8%B0%83%E8%8A%82%E6%B0%B4%E3%80%81%E7%94%B5%E8%A7%A3%E8%B4%A8%E5%8F%8A%E9%85%B8%E7%A2%B1%E5%B9%B3%E8%A1%A1%E8%8D%AF/"/>
+      <category term="17.调节水、电解质及酸碱平衡药" scheme="http://pharmacycare.github.io/categories/17-%E8%B0%83%E8%8A%82%E6%B0%B4%E3%80%81%E7%94%B5%E8%A7%A3%E8%B4%A8%E5%8F%8A%E9%85%B8%E7%A2%B1%E5%B9%B3%E8%A1%A1%E8%8D%AF/"/>
     
     
   </entry>
   
   <entry>
     <title>第九章  消化系统用药</title>
-    <link href="http://log.cqh.ch/09.html"/>
-    <id>http://log.cqh.ch/09.html</id>
+    <link href="http://pharmacycare.github.io/09.html"/>
+    <id>http://pharmacycare.github.io/09.html</id>
     <published>2020-06-05T14:35:52.244Z</published>
     <updated>2020-04-29T04:27:22.140Z</updated>
     
@@ -468,15 +468,15 @@
     </summary>
     
     
-      <category term="09. 消化系统用药" scheme="http://log.cqh.ch/categories/09-%E6%B6%88%E5%8C%96%E7%B3%BB%E7%BB%9F%E7%94%A8%E8%8D%AF/"/>
+      <category term="09. 消化系统用药" scheme="http://pharmacycare.github.io/categories/09-%E6%B6%88%E5%8C%96%E7%B3%BB%E7%BB%9F%E7%94%A8%E8%8D%AF/"/>
     
     
   </entry>
   
   <entry>
     <title>第十章  泌尿系统用药</title>
-    <link href="http://log.cqh.ch/10.html"/>
-    <id>http://log.cqh.ch/10.html</id>
+    <link href="http://pharmacycare.github.io/10.html"/>
+    <id>http://pharmacycare.github.io/10.html</id>
     <published>2020-06-05T14:35:52.244Z</published>
     <updated>2020-04-29T04:31:45.900Z</updated>
     
@@ -505,15 +505,15 @@
     </summary>
     
     
-      <category term="10. 泌尿系统用药" scheme="http://log.cqh.ch/categories/10-%E6%B3%8C%E5%B0%BF%E7%B3%BB%E7%BB%9F%E7%94%A8%E8%8D%AF/"/>
+      <category term="10. 泌尿系统用药" scheme="http://pharmacycare.github.io/categories/10-%E6%B3%8C%E5%B0%BF%E7%B3%BB%E7%BB%9F%E7%94%A8%E8%8D%AF/"/>
     
     
   </entry>
   
   <entry>
     <title>第十一章  血液系统用药</title>
-    <link href="http://log.cqh.ch/11.html"/>
-    <id>http://log.cqh.ch/11.html</id>
+    <link href="http://pharmacycare.github.io/11.html"/>
+    <id>http://pharmacycare.github.io/11.html</id>
     <published>2020-06-05T14:35:52.244Z</published>
     <updated>2020-04-29T04:31:44.960Z</updated>
     
@@ -535,15 +535,15 @@
     </summary>
     
     
-      <category term="11.  血液系统用药" scheme="http://log.cqh.ch/categories/11-%E8%A1%80%E6%B6%B2%E7%B3%BB%E7%BB%9F%E7%94%A8%E8%8D%AF/"/>
+      <category term="11.  血液系统用药" scheme="http://pharmacycare.github.io/categories/11-%E8%A1%80%E6%B6%B2%E7%B3%BB%E7%BB%9F%E7%94%A8%E8%8D%AF/"/>
     
     
   </entry>
   
   <entry>
     <title>第十二章  激素及影响内分泌药</title>
-    <link href="http://log.cqh.ch/12.html"/>
-    <id>http://log.cqh.ch/12.html</id>
+    <link href="http://pharmacycare.github.io/12.html"/>
+    <id>http://pharmacycare.github.io/12.html</id>
     <published>2020-06-05T14:35:52.244Z</published>
     <updated>2020-04-29T04:31:44.050Z</updated>
     
@@ -565,15 +565,15 @@
     </summary>
     
     
-      <category term="12.  激素及影响内分泌药" scheme="http://log.cqh.ch/categories/12-%E6%BF%80%E7%B4%A0%E5%8F%8A%E5%BD%B1%E5%93%8D%E5%86%85%E5%88%86%E6%B3%8C%E8%8D%AF/"/>
+      <category term="12.  激素及影响内分泌药" scheme="http://pharmacycare.github.io/categories/12-%E6%BF%80%E7%B4%A0%E5%8F%8A%E5%BD%B1%E5%93%8D%E5%86%85%E5%88%86%E6%B3%8C%E8%8D%AF/"/>
     
     
   </entry>
   
   <entry>
     <title>第八章  呼吸系统用药</title>
-    <link href="http://log.cqh.ch/08.html"/>
-    <id>http://log.cqh.ch/08.html</id>
+    <link href="http://pharmacycare.github.io/08.html"/>
+    <id>http://pharmacycare.github.io/08.html</id>
     <published>2020-06-05T14:35:52.234Z</published>
     <updated>2020-06-05T14:28:20.904Z</updated>
     
@@ -596,15 +596,15 @@
     </summary>
     
     
-      <category term="08.  呼吸系统用药" scheme="http://log.cqh.ch/categories/08-%E5%91%BC%E5%90%B8%E7%B3%BB%E7%BB%9F%E7%94%A8%E8%8D%AF/"/>
+      <category term="08.  呼吸系统用药" scheme="http://pharmacycare.github.io/categories/08-%E5%91%BC%E5%90%B8%E7%B3%BB%E7%BB%9F%E7%94%A8%E8%8D%AF/"/>
     
     
   </entry>
   
   <entry>
     <title>第七章  心血管系统用药</title>
-    <link href="http://log.cqh.ch/07.html"/>
-    <id>http://log.cqh.ch/07.html</id>
+    <link href="http://pharmacycare.github.io/07.html"/>
+    <id>http://pharmacycare.github.io/07.html</id>
     <published>2020-06-05T14:35:52.224Z</published>
     <updated>2020-04-29T04:29:38.580Z</updated>
     
@@ -626,7 +626,7 @@
     </summary>
     
     
-      <category term="07. 心血管系统用药" scheme="http://log.cqh.ch/categories/07-%E5%BF%83%E8%A1%80%E7%AE%A1%E7%B3%BB%E7%BB%9F%E7%94%A8%E8%8D%AF/"/>
+      <category term="07. 心血管系统用药" scheme="http://pharmacycare.github.io/categories/07-%E5%BF%83%E8%A1%80%E7%AE%A1%E7%B3%BB%E7%BB%9F%E7%94%A8%E8%8D%AF/"/>
     
     
   </entry>
